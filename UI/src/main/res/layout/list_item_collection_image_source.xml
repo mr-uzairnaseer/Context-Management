@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mItemSportIconIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_marginStart="@dimen/default_margin_and_padding"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/mItemNameTTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:fontFamily="?attr/fontBold"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"
+        android:layout_toEndOf="@+id/mItemSportIconIV"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/mPhotoGridContainerLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/mItemNameTTV"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_below="@+id/mPhotoGridContainerLL"/>
+</RelativeLayout>

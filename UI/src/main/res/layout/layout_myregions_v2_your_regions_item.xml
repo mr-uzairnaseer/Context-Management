@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myregions_v2_your_regions_item_container"
+    android:background="@color/primary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_marginBottom="8dp"
+        android:text="@string/myregions_your_regions_header"
+        android:fontFamily="?attr/fontBold"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+</FrameLayout>

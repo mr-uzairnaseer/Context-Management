@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fab_follow_all_button_container_ll"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+    <View
+        android:background="@drawable/gradient_top_transparent_to_bottom_light_grey_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <FrameLayout
+        android:background="@color/white"
+        android:paddingLeft="@dimen/default_margin_and_padding"
+        android:paddingRight="@dimen/default_margin_and_padding"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <Button
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/fab_follow_all_tb"
+            android:background="@drawable/btn_primary"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:textAllCaps="true"
+            android:fontFamily="?attr/fontRegular"
+            android:elevation="3dp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+package org.locationtech.jts.linearref;
+
+/* loaded from: classes6.dex */
+public class LinearGeometryBuilder {
+}

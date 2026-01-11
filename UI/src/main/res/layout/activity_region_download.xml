@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/layout_region_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ViewStub
+        android:id="@+id/map_stub"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <include layout="@layout/layout_region_download_data"/>
+</LinearLayout>

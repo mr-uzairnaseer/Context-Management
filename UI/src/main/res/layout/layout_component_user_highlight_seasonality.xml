@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/surface_fill_primary_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="@style/TextAppearance.Komoot.Theme2.Heading04Medium"
+        android:textColor="@color/text_primary"
+        android:gravity="bottom"
+        android:id="@+id/textview_seasonality_title"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/highlight_info_section_title_seasonality"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+    <de.komoot.android.ui.highlight.view.SeasonalityOverviewView
+        android:id="@+id/view_seasonality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/std_border_left"
+        android:layout_marginRight="@dimen/std_border_right"
+        android:layout_marginStart="@dimen/std_border_left"
+        android:layout_marginEnd="@dimen/std_border_right"/>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>

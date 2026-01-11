@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">komoot.de
+        </domain>
+        <domain includeSubdomains="false">tilezips.komoot.de.s3.amazonaws.com
+        </domain>
+    </domain-config>
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user"/>
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>

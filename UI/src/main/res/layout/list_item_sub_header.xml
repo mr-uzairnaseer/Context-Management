@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:id="@+id/layout_list_item_sub_header"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/list_item_side_padding"
+    android:paddingRight="@dimen/list_item_side_padding"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="bottom"
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="?attr/fontLight"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/secondary"
+        android:layout_gravity="center"
+        android:id="@+id/buttonRightSide"
+        android:background="@drawable/btn_info_small_states"
+        android:paddingLeft="7dp"
+        android:paddingTop="5dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_alignParentEnd="true"
+        android:elevation="3dp"/>
+</RelativeLayout>

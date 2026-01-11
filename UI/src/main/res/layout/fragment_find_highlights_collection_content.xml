@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <de.komoot.android.widget.KmtRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"/>
+    <de.komoot.android.ui.collection.view.FindCollectionContentFilterBar
+        android:id="@+id/filter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/text_underline"
+        android:id="@+id/textview_no_content_title"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/fcca_no_highlights_note"
+        android:layout_below="@+id/filter_bar"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+    <ImageView
+        android:id="@+id/imageview_no_content"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:src="0x7f08114e"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

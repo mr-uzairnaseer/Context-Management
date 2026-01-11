@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_tour_creator_list_item"
+    android:background="@drawable/list_item_background_states"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="8dp">
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"
+        android:gravity="center_vertical"
+        android:id="@+id/item_header_h3_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+</FrameLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="15dp"
+    android:width="21dp"
+    android:viewportWidth="21"
+    android:viewportHeight="15">
+    <path
+        android:fillColor="@drawable/_country_flag_km__0_res_0x7f08028a"
+        android:pathData="M0,0h21v15h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_km__1_res_0x7f08028b"
+        android:pathData="M0,0h21v4h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_km__2_res_0x7f08028c"
+        android:pathData="M0,7h21v4h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_km__3_res_0x7f08028d"
+        android:pathData="M0,11h21v4h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_km__4_res_0x7f08028e"
+        android:pathData="M0,4h21v3h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_km__5_res_0x7f08028f"
+        android:pathData="M0,15l10,-7.5l-10,-7.5z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_km__6_res_0x7f080290"
+        android:pathData="M4.75,4.5945C4.5103,4.5328 4.259,4.5 4,4.5C2.3431,4.5 1,5.8431 1,7.5C1,9.1569 2.3431,10.5 4,10.5C4.259,10.5 4.5103,10.4672 4.75,10.4055C3.4561,10.0725 2.5,8.8979 2.5,7.5C2.5,6.1021 3.4561,4.9275 4.75,4.5945ZM5.5,6C5.2239,6 5,5.7761 5,5.5C5,5.2239 5.2239,5 5.5,5C5.7761,5 6,5.2239 6,5.5C6,5.7761 5.7761,6 5.5,6ZM5.5,8C5.2239,8 5,7.7761 5,7.5C5,7.2239 5.2239,7 5.5,7C5.7761,7 6,7.2239 6,7.5C6,7.7761 5.7761,8 5.5,8ZM5.5,10C5.2239,10 5,9.7761 5,9.5C5,9.2239 5.2239,9 5.5,9C5.7761,9 6,9.2239 6,9.5C6,9.7761 5.7761,10 5.5,10Z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+</vector>

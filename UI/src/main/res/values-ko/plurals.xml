@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="atlas_carrousel_hikes_pagination">
+        <item quantity="other">%1$d~%2$d번째 하이킹 (총 %3$d개)</item>
+    </plurals>
+    <plurals name="atlas_carrousel_rides_pagination">
+        <item quantity="other">%1$d~%2$d번째 라이딩 (총 %3$d개)</item>
+    </plurals>
+    <plurals name="atlas_carrousel_runs_pagination">
+        <item quantity="other">%1$d~%2$d번째 러닝 (총 %3$d개)</item>
+    </plurals>
+    <plurals name="atlas_filter_collections_show_button">
+        <item quantity="other">라이딩 %s개 보기</item>
+    </plurals>
+    <plurals name="atlas_filter_hikes_show_button">
+        <item quantity="other">하이킹 %s개 보기</item>
+    </plurals>
+    <plurals name="atlas_filter_rides_show_button">
+        <item quantity="other">라이딩 %s개 보기</item>
+    </plurals>
+    <plurals name="atlas_filter_runs_show_button">
+        <item quantity="other">러닝 %s개 보기</item>
+    </plurals>
+    <plurals name="atlas_highlight_header">
+        <item quantity="other">하이라이트 %1$d개</item>
+    </plurals>
+    <plurals name="atlas_highlight_hikes_social_proof">
+        <item quantity="one">%1$d명의 하이커가 추천함</item>
+        <item quantity="other">%1$d명의 하이커가 추천함</item>
+    </plurals>
+    <plurals name="atlas_highlight_mtb_social_proof">
+        <item quantity="one">%1$d명의 산악 자전거 타는 사람이 추천함</item>
+        <item quantity="other">%1$d명의 산악 자전거 타는 사람이 추천함</item>
+    </plurals>
+    <plurals name="atlas_highlight_rides_social_proof">
+        <item quantity="one">%1$d명의 자전거 타는 사람이 추천함</item>
+        <item quantity="other">%1$d명의 자전거 타는 사람이 추천함</item>
+    </plurals>
+    <plurals name="atlas_highlight_road_social_proof">
+        <item quantity="one">%1$d명의 로드 자전거 타는 사람이 추천함</item>
+        <item quantity="other">%1$d명의 로드 자전거 타는 사람이 추천함</item>
+    </plurals>
+    <plurals name="atlas_highlight_runs_social_proof">
+        <item quantity="one">%1$d명의 러너가 추천함</item>
+        <item quantity="other">%1$d명의 러너가 추천함</item>
+    </plurals>
+    <plurals name="atlas_list_header_collections">
+        <item quantity="other">라이딩 %1$d개</item>
+    </plurals>
+    <plurals name="atlas_list_header_hikes">
+        <item quantity="other">하이킹 %1$d개</item>
+    </plurals>
+    <plurals name="atlas_list_header_rides">
+        <item quantity="other">라이딩 %1$d개</item>
+    </plurals>
+    <plurals name="atlas_list_header_runs">
+        <item quantity="other">러닝 %1$d개</item>
+    </plurals>
+    <plurals name="atw_highlight_recommend_photo_contributions_plural">
+        <item quantity="other">여기에서 사진 %s장을 찍으셨네요! 다른 사람들도 볼 수 있게 공유해보세요!</item>
+    </plurals>
+    <plurals name="cfa_highlights">
+        <item quantity="other">하이라이트</item>
+    </plurals>
+    <plurals name="collection_summary_highlights_count">
+        <item quantity="other">하이라이트 %1$d개</item>
+    </plurals>
+    <plurals name="collection_summary_tours_count">
+        <item quantity="other">투어 %1$d개</item>
+    </plurals>
+    <plurals name="contribute_images_count">
+        <item quantity="other">%s장 선택</item>
+    </plurals>
+    <plurals name="contribute_images_description">
+        <item quantity="other">이 하이라이트 사진이 %s장 있네요. 탭 해서 추가하거나 유용하고 영감을 주는 이미지를 더 공유해 보세요.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d초 빨리 감기</item>
+        <item quantity="other">%d초 빨리 감기</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d초 되감기</item>
+        <item quantity="other">%d초 되감기</item>
+    </plurals>
+    <plurals name="expire_in_days">
+        <item quantity="other">%s일</item>
+    </plurals>
+    <plurals name="expire_in_hours_plural">
+        <item quantity="other">%s시간</item>
+    </plurals>
+    <plurals name="expire_in_minutes_plural">
+        <item quantity="other">%s분</item>
+    </plurals>
+    <plurals name="fca_follow_all_friends_button">
+        <item quantity="other">친구 %d명 팔로우</item>
+    </plurals>
+    <plurals name="fcca_items">
+        <item quantity="other">항목</item>
+    </plurals>
+    <plurals name="ffa_follow_n_contact_friends">
+        <item quantity="other">연락처 %d개 보기</item>
+    </plurals>
+    <plurals name="ffa_follow_n_facebook_friends">
+        <item quantity="other">Facebook 친구 %d명 보기</item>
+    </plurals>
+    <plurals name="filter_show_routes">
+        <item quantity="one">%d 경로 보기</item>
+        <item quantity="other">%d 경로 보기</item>
+    </plurals>
+    <plurals name="free_experience_live_sync_remaining_days">
+        <item quantity="other">내 Garmin® 기기에서 komoot의 원활한 내비게이션 기능을 %s일 더 누려보세요. </item>
+    </plurals>
+    <plurals name="free_experience_live_sync_remaining_hours">
+        <item quantity="other">내 Garmin® 기기에서 komoot의 원활한 내비게이션 기능을 %s시간 더 누려보세요. </item>
+    </plurals>
+    <plurals name="free_experience_live_sync_remaining_minutes">
+        <item quantity="other">내 Garmin® 기기에서 komoot의 원활한 내비게이션 기능을 %s분 더 누려보세요. </item>
+    </plurals>
+    <plurals name="gallery_filter_by_days">
+        <item quantity="other">‪%d‬일 전</item>
+    </plurals>
+    <plurals name="gallery_label_photos">
+        <item quantity="other">%d장의 사진</item>
+    </plurals>
+    <plurals name="garmin_history_import_loading_progress_plural">
+        <item quantity="other">투어 ‪%1$d‬개</item>
+    </plurals>
+    <plurals name="group_activity_prompt_message_leader_generic">
+        <item quantity="other">출발해 볼까요! 투어 참여자는 %s명이에요. Live Sync를 통해 경로 업데이트를 받아보세요.</item>
+    </plurals>
+    <plurals name="group_activity_prompt_message_leader_hike">
+        <item quantity="other">힘차게 트레일을 밟아 봐요! 하이킹 참여자는 %s명이에요. Live Sync를 통해 경로 업데이트를 받아보세요.</item>
+    </plurals>
+    <plurals name="group_activity_prompt_message_leader_ride">
+        <item quantity="other">힘차게 굴려봅시다! 라이딩 참여자는 %s명이에요. Live Sync를 통해 경로 업데이트를 받아보세요.</item>
+    </plurals>
+    <plurals name="group_activity_prompt_message_leader_run">
+        <item quantity="other">출발해 볼까요! 러닝 참여자는 %s명이에요. Live Sync를 통해 경로 업데이트를 받아보세요.</item>
+    </plurals>
+    <plurals name="group_activity_switch_session_join_case_confirm_dialog_message_leader">
+        <item quantity="other">진행 중인 투어에 이 경로를 추가하고 %s명의 참여자를 모두 업데이트하거나 투어를 종료하고 새로운 투어에 참여할 수도 있어요.</item>
+    </plurals>
+    <plurals name="group_activity_switch_session_start_case_confirm_dialog_message_leader">
+        <item quantity="other">진행 중인 투어에 이 경로를 추가하고 %s명의 참여자를 모두 업데이트하거나 투어를 종료하고 새로운 투어에 참여할 수도 있어요.</item>
+    </plurals>
+    <plurals name="highlight_list_filter_result_count_plural">
+        <item quantity="other">투어 ‪%s‬개 찾음</item>
+    </plurals>
+    <plurals name="lang_sport_count_cycling">
+        <item quantity="other">사이클리스트 %2$d명 중 %1$d명</item>
+    </plurals>
+    <plurals name="lang_sport_count_hiking">
+        <item quantity="other">하이커 %2$d명 중 %1$d명</item>
+    </plurals>
+    <plurals name="lang_sport_count_mountain_biking">
+        <item quantity="other">산악자전거 라이더 %2$d명 중 %1$d명</item>
+    </plurals>
+    <plurals name="lang_sport_count_mountaineering">
+        <item quantity="other">등산가 %2$d명 중 %1$d명</item>
+    </plurals>
+    <plurals name="lang_sport_count_other">
+        <item quantity="other">%2$d명 중 %1$d명</item>
+    </plurals>
+    <plurals name="lang_sport_count_road_cycling">
+        <item quantity="other">로드 사이클리스트 %2$d명 중 %1$d명</item>
+    </plurals>
+    <plurals name="lang_sport_count_running">
+        <item quantity="other">러너 %2$d명 중 %1$d명</item>
+    </plurals>
+    <plurals name="lang_sport_recommended_by_cycling">
+        <item quantity="other">사이클리스트 %2$d명 중 %1$d명이 추천</item>
+    </plurals>
+    <plurals name="lang_sport_recommended_by_hiking">
+        <item quantity="other">하이커 %2$d명 중 %1$d명이 추천</item>
+    </plurals>
+    <plurals name="lang_sport_recommended_by_mountain_biking">
+        <item quantity="other">산악자전거 라이더 %2$d명 중 %1$d명이 추천</item>
+    </plurals>
+    <plurals name="lang_sport_recommended_by_mountaineering">
+        <item quantity="other">등산가 %2$d명 중 %1$d명이 추천</item>
+    </plurals>
+    <plurals name="lang_sport_recommended_by_other">
+        <item quantity="other">%2$d명 중 %1$d명이 추천</item>
+    </plurals>
+    <plurals name="lang_sport_recommended_by_road_cycling">
+        <item quantity="other">로드 사이클리스트 %2$d명 중 %1$d명이 추천</item>
+    </plurals>
+    <plurals name="lang_sport_recommended_by_running">
+        <item quantity="other">러너 %2$d명 중 %1$d명이 추천</item>
+    </plurals>
+    <plurals name="likes_count_label_others">
+        <item quantity="one">%s명</item>
+        <item quantity="other">%s명</item>
+    </plurals>
+    <plurals name="live_sync_devices_invite_participants_count">
+        <item quantity="other">참여자 %s명</item>
+    </plurals>
+    <plurals name="live_sync_group_activity_route_updated_leader_info">
+        <item quantity="other">참여자 %s명의 경로가 업데이트되었어요.</item>
+    </plurals>
+    <plurals name="live_sync_group_resend_route_done">
+        <item quantity="other">%s명의 참여자에게 경로가 전송되었습니다.</item>
+    </plurals>
+    <plurals name="live_tracking_link_shared_to_safety_contacts_toast">
+        <item quantity="other">비상 연락망에 등록된 사람들에게 실시간 추적 링크가 공유되었습니다.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">새 알림 %d개</item>
+        <item quantity="other">새 알림 %d개</item>
+    </plurals>
+    <plurals name="multi_day_routes_activity_duration">
+        <item quantity="other">%d일</item>
+    </plurals>
+    <plurals name="multi_day_routes_filter_activity_label">
+        <item quantity="other">스포츠</item>
+    </plurals>
+    <plurals name="multi_day_routes_filter_apply_hikes">
+        <item quantity="other">하이킹 %s개 보기</item>
+    </plurals>
+    <plurals name="multi_day_routes_filter_apply_rides">
+        <item quantity="other">라이딩 %s개 보기</item>
+    </plurals>
+    <plurals name="multi_day_routes_filter_apply_routes">
+        <item quantity="other">경로 %s개 보기</item>
+    </plurals>
+    <plurals name="multi_day_routes_filter_apply_runs">
+        <item quantity="other">러닝 %s개 보기</item>
+    </plurals>
+    <plurals name="multi_day_routes_filter_country_label">
+        <item quantity="other">국가</item>
+    </plurals>
+    <plurals name="multiday_travel_time_per_day_hours_plural">
+        <item quantity="other">‪%s‬시간</item>
+    </plurals>
+    <plurals name="notification_deleting">
+        <item quantity="other">지도 %d개 삭제</item>
+    </plurals>
+    <plurals name="notification_downloading">
+        <item quantity="other">지도 %d개 다운로드</item>
+    </plurals>
+    <plurals name="notification_requests_header">
+        <item quantity="other">새 요청 %s개</item>
+    </plurals>
+    <plurals name="number_of_comments">
+        <item quantity="one">%s 댓글</item>
+        <item quantity="other">%s 댓글</item>
+    </plurals>
+    <plurals name="offer_ends_in_hours_plural">
+        <item quantity="other">%s시간 후 혜택 종료</item>
+    </plurals>
+    <plurals name="offer_ends_in_minutes_plural">
+        <item quantity="other">1분 후 혜택 종료</item>
+    </plurals>
+    <plurals name="onboarding_sport_selection_greetingfavorite_inspiration_4_more">
+        <item quantity="other">%s, %s, %s 외 %s개의 활동을 선택하셨네요. 혹시 선택한 스포츠를 변경하려면 언제든지 &apos;설정&apos;에서 좋아하는 야외 활동을 업데이트하세요.</item>
+    </plurals>
+    <plurals name="place_info_reviews_tripadvisor_count">
+        <item quantity="other">후기 %d개</item>
+    </plurals>
+    <plurals name="place_info_reviews_yelp_count">
+        <item quantity="other">후기 %d개 참고</item>
+    </plurals>
+    <plurals name="premium_buy_welcome_months_offer_plural">
+        <item quantity="other">%s개월 무료 이용</item>
+    </plurals>
+    <plurals name="premium_buy_welcome_months_text_plural">
+        <item quantity="other">1년 동안 멋진 모험을 즐겨볼까요? 프리미엄 %1$s개월 무료 이용 혜택을 받아 %2$s년에는 더 멀리 떠나보세요.</item>
+    </plurals>
+    <plurals name="profile_other_user_streak_ongoing_weeks">
+        <item quantity="other">%s님이 연속 %d주 출석 중이에요</item>
+    </plurals>
+    <plurals name="profile_user_streak_ongoing_weeks">
+        <item quantity="other">%d주 연속 출석 중이에요</item>
+    </plurals>
+    <plurals name="pwa_hide_waypoints">
+        <item quantity="other">경유지 숨기기</item>
+    </plurals>
+    <plurals name="pwa_n_more_waypoints">
+        <item quantity="other">+ 경유지 %d곳</item>
+    </plurals>
+    <plurals name="route_extra_tip_conservation_area_msg">
+        <item quantity="one">다음에 대한 지역 규정을 확인하세요:</item>
+        <item quantity="other">다음에 대한 지역 규정을 확인하세요:</item>
+    </plurals>
+    <plurals name="route_extra_tip_conservation_area_title">
+        <item quantity="one">귀하의 경로는 보호 구역을 통과합니다</item>
+        <item quantity="other">귀하의 경로는 보호 구역을 통과합니다</item>
+    </plurals>
+    <plurals name="route_extra_tip_cycling_dismount_msg">
+        <item quantity="other">자전거에서 내려 자전거를 끌고 가야 합니다.</item>
+    </plurals>
+    <plurals name="route_extra_tip_cycling_dismount_title">
+        <item quantity="one">이 경로의 일부 구간에서는 자전거 이용이 허용되지 않아요.</item>
+        <item quantity="other">이 경로의 일부 구간에서는 자전거 이용이 허용되지 않아요.</item>
+    </plurals>
+    <plurals name="route_extra_tip_ferry_msg">
+        <item quantity="other">페리 시간표를 확인하세요.</item>
+    </plurals>
+    <plurals name="route_extra_tip_ferry_title">
+        <item quantity="other">페리 이용 구간 포함</item>
+    </plurals>
+    <plurals name="route_extra_tip_heavy_traffic_msg">
+        <item quantity="other">교통량이 많은 곳이니 도로에서 조심하세요.</item>
+    </plurals>
+    <plurals name="route_extra_tip_heavy_traffic_title">
+        <item quantity="other">교통량이 많은 도로 포함</item>
+    </plurals>
+    <plurals name="route_extra_tip_high_danger_msg">
+        <item quantity="other">고도의 테크닉이 필요하거나 통행하기 어렵거나 사고 위험이 있는 지형이 포함되어 있습니다. 따라서 전문 장비 및 사전 경험이 필요합니다.</item>
+    </plurals>
+    <plurals name="route_extra_tip_high_danger_title">
+        <item quantity="other">매우 위험한 구간이 있음</item>
+    </plurals>
+    <plurals name="route_extra_tip_moderate_danger_msg">
+        <item quantity="other">테크닉이 필요하거나 통행하기 어렵거나 사고 위험이 있는 지형이 포함되어 있습니다. 따라서 전문 장비 및 사전 경험이 필요할 수 있습니다.</item>
+    </plurals>
+    <plurals name="route_extra_tip_moderate_danger_title">
+        <item quantity="other">위험할 수 있는 구간이 있음</item>
+    </plurals>
+    <plurals name="route_extra_tip_moveable_bridge_msg">
+        <item quantity="other">이용 시간을 확인하세요.</item>
+    </plurals>
+    <plurals name="route_extra_tip_moveable_bridge_title">
+        <item quantity="other">가동교 포함</item>
+    </plurals>
+    <plurals name="route_extra_tip_offgrid_msg">
+        <item quantity="other">내비게이션 안내가 제한될 수 있습니다.</item>
+    </plurals>
+    <plurals name="route_extra_tip_offgrid_title">
+        <item quantity="other">오프 그리드 구간 포함</item>
+    </plurals>
+    <plurals name="route_extra_tip_restricted_msg">
+        <item quantity="other">제한 구간을 이용할 수 있는지 미리 확인하세요.</item>
+    </plurals>
+    <plurals name="route_extra_tip_restricted_title">
+        <item quantity="other">일시 접근 제한 구간 포함</item>
+    </plurals>
+    <plurals name="route_extra_tip_unsuitable_msg">
+        <item quantity="other">일부 구간의 지면이 선택한 스포츠에 적합하지 않을 수 있습니다.</item>
+    </plurals>
+    <plurals name="route_extra_tip_unsuitable_title">
+        <item quantity="other">일부 구간의 지면이 적합하지 않을 수 있음</item>
+    </plurals>
+    <plurals name="route_info_timeline_more">
+        <item quantity="other">+ 장소 %s곳</item>
+    </plurals>
+    <plurals name="route_information_show_more">
+        <item quantity="other">팁 %s개 더 보기</item>
+    </plurals>
+    <plurals name="saved_routes_count_subtitle">
+        <item quantity="other">%d 경로</item>
+    </plurals>
+    <plurals name="shop_premium_welcome_months_text_plural">
+        <item quantity="other">Komoot에 가입하여 모험에 한 걸음 더 가까워졌습니다! 이제 프리미엄 혜택을 통해 1년 동안 야외 활동을 본격적으로 즐겨보세요. 지금 바로 프리미엄에 가입하여 첫해에 %s개월 무료 혜택을 받아보세요.</item>
+    </plurals>
+    <plurals name="shop_premium_welcome_months_title_plural">
+        <item quantity="other">프리미엄 ‪%s‬개월 무료 이용 혜택을 받아 더 멀리 떠나보세요</item>
+    </plurals>
+    <plurals name="smarttour_see_photos">
+        <item quantity="other">%d장의 사진 보기</item>
+    </plurals>
+    <plurals name="som_imperial_feet_dative">
+        <item quantity="other">피트</item>
+    </plurals>
+    <plurals name="som_imperial_feet_nominative">
+        <item quantity="other">피트</item>
+    </plurals>
+    <plurals name="som_imperial_mile_dative">
+        <item quantity="other">마일</item>
+    </plurals>
+    <plurals name="som_imperial_mile_nominative">
+        <item quantity="other">마일</item>
+    </plurals>
+    <plurals name="som_imperial_yard_dative">
+        <item quantity="other">야드</item>
+    </plurals>
+    <plurals name="som_imperial_yard_nominative">
+        <item quantity="other">야드</item>
+    </plurals>
+    <plurals name="som_metric_kilometer_dative">
+        <item quantity="other">킬로미터</item>
+    </plurals>
+    <plurals name="som_metric_kilometer_nominative">
+        <item quantity="other">킬로미터</item>
+    </plurals>
+    <plurals name="som_metric_meter_dative">
+        <item quantity="other">미터</item>
+    </plurals>
+    <plurals name="som_metric_meter_nominative">
+        <item quantity="other">미터</item>
+    </plurals>
+    <plurals name="tour_list_filter_result_count_plural">
+        <item quantity="other">투어 ‪%s‬개 찾음</item>
+    </plurals>
+    <plurals name="tour_list_tour_count">
+        <item quantity="other">투어 %d개</item>
+    </plurals>
+    <plurals name="tour_rating_total">
+        <item quantity="other">%s개의 평가</item>
+    </plurals>
+    <plurals name="tour_upload_image_upload_successful_msg_plural">
+        <item quantity="other">여기를 눌러 사진 %s장을 공유해보세요.</item>
+    </plurals>
+    <plurals name="tour_visitor_count_hikes">
+        <item quantity="other">%s명이 여기서 하이킹을 즐겼어요</item>
+    </plurals>
+    <plurals name="tour_visitor_count_rides">
+        <item quantity="other">%s명이 여기서 라이딩을 즐겼어요</item>
+    </plurals>
+    <plurals name="tour_visitor_count_runs">
+        <item quantity="other">%s명이 여기서 러닝을 즐겼어요</item>
+    </plurals>
+    <plurals name="unit_hour">
+        <item quantity="other">시간</item>
+    </plurals>
+    <plurals name="unit_name_hour">
+        <item quantity="other">시간</item>
+    </plurals>
+    <plurals name="unit_name_minutes">
+        <item quantity="other">분</item>
+    </plurals>
+    <plurals name="user_activity_feed_more_comments">
+        <item quantity="other">댓글 %d개 더 보기</item>
+    </plurals>
+    <plurals name="user_highlight_contribute_photos_plural">
+        <item quantity="other">여기서 사진 %s장을 찍으셨네요. 다른 사람들도 볼 수 있게 사진을 추가해보세요!</item>
+    </plurals>
+    <plurals name="user_info_followers_count">
+        <item quantity="other">팔로워 %1$d명</item>
+    </plurals>
+    <plurals name="voiceNavigation_kilometer">
+        <item quantity="other">킬로미터</item>
+    </plurals>
+    <plurals name="voiceNavigation_kilometer_accusative">
+        <item quantity="other">킬로미터</item>
+    </plurals>
+    <plurals name="voiceNavigation_meter">
+        <item quantity="other">미터</item>
+    </plurals>
+    <plurals name="voiceNavigation_meter_accusative">
+        <item quantity="other">미터</item>
+    </plurals>
+    <plurals name="world_pack_first_unlocked">
+        <item quantity="other">이용 중인 지도 #개</item>
+    </plurals>
+</resources>

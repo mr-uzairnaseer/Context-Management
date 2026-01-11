@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_dev_settings"
+    android:key="pref_key_app_settings">
+    <PreferenceCategory
+        android:title="Get Product"
+        app:iconSpaceReserved="false">
+        <EditTextPreference
+            android:persistent="false"
+            android:title="Get Product URL"
+            android:key="pref_key_get_product_url"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Get Product"
+            android:key="pref_key_get_product"
+            app:iconSpaceReserved="false"/>
+        <EditTextPreference
+            android:persistent="false"
+            android:title="Subscription ID"
+            android:key="pref_key_subscription_id"
+            app:iconSpaceReserved="false"/>
+        <EditTextPreference
+            android:persistent="false"
+            android:title="SKU ID"
+            android:key="pref_key_sku_id"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Buy Subscription (SKU-&gt;TOKEN)"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:persistent="false"
+            android:title="Buy Subscription"
+            android:key="pref_key_buy_sub"
+            app:iconSpaceReserved="false"/>
+        <EditTextPreference
+            android:persistent="false"
+            android:title="Token"
+            android:key="pref_key_token"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Send Token"
+        app:iconSpaceReserved="false">
+        <EditTextPreference
+            android:persistent="false"
+            android:title="Send Token URL"
+            android:key="pref_key_send_token_url"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Send Token"
+            android:key="pref_key_send_token"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

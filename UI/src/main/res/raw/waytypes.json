@@ -1,0 +1,816 @@
+{
+  "wt#alpine_hiking_path": {
+    "caption": "Alpine Hiking Path",
+    "sumKey": "wt#alpine_hiking_path",
+    "order": 10,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d9": {
+    "caption": "Alpine Hiking Path (SAC T6)",
+    "sumKey": "wt#alpine_hiking_path",
+    "order": 11,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d8": {
+    "caption": "Alpine Hiking Path (SAC T5)",
+    "sumKey": "wt#alpine_hiking_path",
+    "order": 12,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d7": {
+    "caption": "Alpine Hiking Path (SAC T4)",
+    "sumKey": "wt#alpine_hiking_path",
+    "order": 13,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#alpine_bike": {
+    "caption": "Alpine Path",
+    "sumKey": "wt#alpine_bike",
+    "order": 20,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#alpine_bike_d9": {
+    "caption": "Alpine Path (SAC T6)",
+    "sumKey": "wt#alpine_bike",
+    "order": 21,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#alpine_bike_d8": {
+    "caption": "Alpine Path (SAC T5)",
+    "sumKey": "wt#alpine_bike",
+    "order": 22,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#mountain_hiking_path": {
+    "caption": "Mountain Hiking Path",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 30,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d6": {
+    "caption": "Mountain Hiking Path (SAC T3)",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 31,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d5": {
+    "caption": "Mountain Hiking Path (SAC T2)",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 32,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d4": {
+    "caption": "Mountain Hiking Path (SAC T2)",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 33,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d3": {
+    "caption": "Mountain Hiking Path (SAC T2)",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 34,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#trail": {
+    "caption": "Singletrack",
+    "sumKey": "wt#trail",
+    "order": 40,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d7": {
+    "caption": "Singletrack (S5)",
+    "sumKey": "wt#trail",
+    "order": 41,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d6": {
+    "caption": "Singletrack (S4)",
+    "sumKey": "wt#trail",
+    "order": 42,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d5": {
+    "caption": "Singletrack (S3)",
+    "sumKey": "wt#trail",
+    "order": 43,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d4": {
+    "caption": "Singletrack (S2)",
+    "sumKey": "wt#trail",
+    "order": 44,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d3": {
+    "caption": "Singletrack (S2)",
+    "sumKey": "wt#trail",
+    "order": 45,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d2": {
+    "caption": "Singletrack (S1)",
+    "sumKey": "wt#trail",
+    "order": 46,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d1": {
+    "caption": "Singletrack (S0)",
+    "sumKey": "wt#trail",
+    "order": 47,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#hiking_path": {
+    "caption": "Hiking Path",
+    "sumKey": "wt#hiking_path",
+    "order": 50,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d2": {
+    "caption": "Hiking Path (SAC T1)",
+    "sumKey": "wt#hiking_path",
+    "order": 51,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#long_hiking_path": {
+    "caption": "Long-Distance Hiking Path",
+    "sumKey": "wt#hiking_path",
+    "order": 52,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#way": {
+    "caption": "Path",
+    "sumKey": "wt#way",
+    "order": 60,
+    "color": {
+      "rgb": "CAD0D7",
+      "opacity": 1
+    }
+  },
+  "wt#track": {
+    "caption": "Track",
+    "sumKey": "wt#track",
+    "order": 61,
+    "color": {
+      "rgb": "CAD0D7",
+      "opacity": 1
+    }
+  },
+  "wt#footway": {
+    "caption": "Footpath",
+    "sumKey": "wt#footway",
+    "order": 62,
+    "color": {
+      "rgb": "CAD0D7",
+      "opacity": 1
+    }
+  },
+  "wt#cycleway": {
+    "caption": "Cycleway",
+    "sumKey": "wt#cycleway",
+    "order": 70,
+    "color": {
+      "rgb": "65AAA2",
+      "opacity": 1
+    }
+  },
+  "wt#cycle_route": {
+    "caption": "Long-distance Cycleway",
+    "sumKey": "wt#cycleway",
+    "order": 71,
+    "color": {
+      "rgb": "65AAA2",
+      "opacity": 1
+    }
+  },
+  "wt#minor_road": {
+    "caption": "Street",
+    "sumKey": "wt#minor_road",
+    "order": 80,
+    "color": {
+      "rgb": "BAC2C8",
+      "opacity": 1
+    }
+  },
+  "wt#street": {
+    "caption": "Road",
+    "sumKey": "wt#street",
+    "order": 90,
+    "color": {
+      "rgb": "A4ACB7",
+      "opacity": 1
+    }
+  },
+  "wt#primary": {
+    "caption": "State Road",
+    "sumKey": "wt#primary",
+    "order": 100,
+    "color": {
+      "rgb": "E7C363",
+      "opacity": 1
+    }
+  },
+  "wt#ferry": {
+    "caption": "Ferry",
+    "sumKey": "wt#ferry",
+    "order": 110,
+    "color": {
+      "rgb": "6FC5EB",
+      "opacity": 1
+    }
+  },
+  "wt#service": {
+    "caption": "Access Road",
+    "sumKey": "wt#service",
+    "order": 63,
+    "color": {
+      "rgb": "CAD0D7",
+      "opacity": 1
+    }
+  },
+  "wt#off_grid": {
+    "caption": "Off-Grid (Unknown)",
+    "sumKey": "wt#off_grid",
+    "order": 200,
+    "color": {
+      "rgb": "D0A5D1",
+      "opacity": 1
+    }
+  },
+  "wt#unknown": {
+    "caption": "Unknown",
+    "sumKey": "wt#unknown",
+    "order": 999,
+    "color": {
+      "rgb": "000000",
+      "opacity": 1
+    }
+  },
+  "sb#asphalt": {
+    "caption": "Asphalt",
+    "sumKey": "sb#asphalt",
+    "order": 60,
+    "color": {
+      "rgb": "8A939E",
+      "opacity": 1
+    }
+  },
+  "sb#concrete": {
+    "caption": "Concrete",
+    "sumKey": "sb#paved",
+    "order": 51,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sb#paved": {
+    "caption": "Paved",
+    "sumKey": "sb#paved",
+    "order": 50,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sb#paving_stones": {
+    "caption": "Paving Stones",
+    "sumKey": "sb#cobbles",
+    "order": 42,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sb#cobblestone": {
+    "caption": "Cobblestones",
+    "sumKey": "sb#cobbles",
+    "order": 41,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sb#cobbles": {
+    "caption": "Cobbles",
+    "sumKey": "sb#cobbles",
+    "order": 40,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sb#compacted": {
+    "caption": "Compacted Gravel",
+    "sumKey": "sb#compacted",
+    "order": 30,
+    "color": {
+      "rgb": "C4BEB4",
+      "opacity": 1
+    }
+  },
+  "sb#gravel": {
+    "caption": "Gravel",
+    "sumKey": "sb#unpaved",
+    "order": 26,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#grass_paver": {
+    "caption": "Grass Paver",
+    "sumKey": "sb#unpaved",
+    "order": 25,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#wood": {
+    "caption": "Wood",
+    "sumKey": "sb#unpaved",
+    "order": 24,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#sand": {
+    "caption": "Sand",
+    "sumKey": "sb#unpaved",
+    "order": 23,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#ground": {
+    "caption": "Ground",
+    "sumKey": "sb#unpaved",
+    "order": 22,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#stone": {
+    "caption": "Stone",
+    "sumKey": "sb#unpaved",
+    "order": 21,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#unpaved": {
+    "caption": "Unpaved",
+    "sumKey": "sb#unpaved",
+    "order": 20,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#alpin": {
+    "caption": "Alpine",
+    "sumKey": "sb#alpin",
+    "order": 10,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "sb#unknown": {
+    "caption": "Unknown",
+    "sumKey": "sb#unknown",
+    "order": 999,
+    "color": {
+      "rgb": "000000",
+      "opacity": 1
+    }
+  },
+  "sf#asphalt": {
+    "caption": "Asphalt",
+    "sumKey": "sf#asphalt",
+    "order": 60,
+    "color": {
+      "rgb": "8A939E",
+      "opacity": 1
+    }
+  },
+  "sf#concrete": {
+    "caption": "Concrete",
+    "sumKey": "sf#paved",
+    "order": 53,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sf#cobblestone": {
+    "caption": "Cobblestone",
+    "sumKey": "sf#paved",
+    "order": 52,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sf#paving_stones": {
+    "caption": "Paving Stones",
+    "sumKey": "sf#paved",
+    "order": 51,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sf#paved": {
+    "caption": "Paved",
+    "sumKey": "sf#paved",
+    "order": 50,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sf#compacted": {
+    "caption": "Compacted Gravel",
+    "sumKey": "sf#gravel",
+    "order": 41,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sf#gravel": {
+    "caption": "Gravel",
+    "sumKey": "sf#gravel",
+    "order": 40,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sf#grass_paver": {
+    "caption": "Grass Paver",
+    "sumKey": "sf#unpaved",
+    "order": 32,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sf#wood": {
+    "caption": "Wood",
+    "sumKey": "sf#unpaved",
+    "order": 31,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sf#unpaved": {
+    "caption": "Unpaved",
+    "sumKey": "sf#unpaved",
+    "order": 30,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sf#sand": {
+    "caption": "Sand",
+    "sumKey": "sf#nature",
+    "order": 23,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sf#ground": {
+    "caption": "Ground",
+    "sumKey": "sf#nature",
+    "order": 22,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sf#stone": {
+    "caption": "Stone",
+    "sumKey": "sf#nature",
+    "order": 21,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sf#nature": {
+    "caption": "Natural",
+    "sumKey": "sf#nature",
+    "order": 20,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sf#alpin": {
+    "caption": "Alpine",
+    "sumKey": "sf#alpin",
+    "order": 10,
+    "color": {
+      "rgb": "B3B99D",
+      "opacity": 1
+    }
+  },
+  "sf#unknown": {
+    "caption": "Unknown",
+    "sumKey": "sf#unknown",
+    "order": 999,
+    "color": {
+      "rgb": "000000",
+      "opacity": 1
+    }
+  },
+  "sm#asphalt": {
+    "caption": "Asphalt",
+    "sumKey": "sm#asphalt",
+    "order": 60,
+    "color": {
+      "rgb": "8A939E",
+      "opacity": 1
+    }
+  },
+  "sm#concrete": {
+    "caption": "Concrete",
+    "sumKey": "sm#paved",
+    "order": 53,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sm#cobblestone": {
+    "caption": "Cobblestones",
+    "sumKey": "sm#paved",
+    "order": 52,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sm#paving_stones": {
+    "caption": "Paving Stones",
+    "sumKey": "sm#paved",
+    "order": 51,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sm#paved": {
+    "caption": "Paved",
+    "sumKey": "sm#paved",
+    "order": 50,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sm#compacted": {
+    "caption": "Compacted Gravel",
+    "sumKey": "sm#gravel",
+    "order": 41,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sm#gravel": {
+    "caption": "Gravel",
+    "sumKey": "sm#gravel",
+    "order": 40,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sm#grass_paver": {
+    "caption": "Grass Paver",
+    "sumKey": "sm#unpaved",
+    "order": 32,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sm#wood": {
+    "caption": "Wood",
+    "sumKey": "sm#unpaved",
+    "order": 31,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sm#unpaved": {
+    "caption": "Unpaved",
+    "sumKey": "sm#unpaved",
+    "order": 30,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sm#sand": {
+    "caption": "Sand",
+    "sumKey": "sm#nature",
+    "order": 23,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sm#ground": {
+    "caption": "Ground",
+    "sumKey": "sm#nature",
+    "order": 22,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sm#stone": {
+    "caption": "Stone",
+    "sumKey": "sm#nature",
+    "order": 21,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sm#nature": {
+    "caption": "Natural",
+    "sumKey": "sm#nature",
+    "order": 20,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sm#alpin": {
+    "caption": "Alpine",
+    "sumKey": "sm#alpin",
+    "order": 10,
+    "color": {
+      "rgb": "B3B99D",
+      "opacity": 1
+    }
+  },
+  "sm#unknown": {
+    "caption": "Unknown",
+    "sumKey": "sm#unknown",
+    "order": 999,
+    "color": {
+      "rgb": "000000",
+      "opacity": 1
+    }
+  },
+  "info!forbidden": {
+    "caption": "Warning! Access is limited or prohibited.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!law_dismount": {
+    "caption": "Bicyclists need to dismount here.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!carry": {
+    "caption": "You'll probably have to carry your bike here.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!critical": {
+    "caption": "Warning. This section is hardly suitable.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!warning3": {
+    "caption": "This section is not ideal.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!warning2": {
+    "caption": "This section is not ideal.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!warning1": {
+    "caption": "",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "d#c1": "Great for any fitness level.",
+  "d#c2": "Good fitness required.",
+  "d#c3": "Very good fitness required.",
+  "db#t1": "Mostly paved surfaces. Suitable for all skill levels.",
+  "db#t2": "Some portions of the Tour may be unpaved and difficult to ride.",
+  "db#t3": "Some portions of the Tour may require you to carry your bike.",
+  "dm#t1": "Suitable for all skill levels.",
+  "dm#t2": "Advanced riding skills necessary.",
+  "dm#t3": "Advanced riding skills necessary. Some portions of the Tour may require you to carry your bike.",
+  "dh#t1": "Easily-accessible paths. Suitable for all skill levels.",
+  "dh#t2": "Mostly accessible paths. Sure-footedness required.",
+  "dh#t3": "Sure-footedness, sturdy shoes and alpine experience required.",
+  "dr#t1": "Mostly well-paved surfaces and easy to ride.",
+  "dr#t2": "Some portions of the Tour may be unpaved and difficult to ride.",
+  "dr#t3": "Some portions of the Tour may require you to carry your bike.",
+  "dj#t1": "Mostly paved surfaces. Suitable for all skill levels.",
+  "dj#t2": "Mostly accessible paths. Some sure footedness required.",
+  "dj#t3": "Sure-footedness, sturdy shoes and alpine experience required."
+}

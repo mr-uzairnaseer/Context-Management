@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sport_select_e_bike_filter"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/ic_ebike_flash_small_white"/>
+    <Switch
+        android:id="@+id/e_bike_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+</LinearLayout>

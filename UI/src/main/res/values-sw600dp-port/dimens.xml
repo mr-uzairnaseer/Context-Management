@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="global_main_tab_bar_plus_notification_bar_height">88dp</dimen>
+    <dimen name="highlight_screen_map_height">220dp</dimen>
+    <dimen name="tour_details_map_height">337dp</dimen>
+</resources>

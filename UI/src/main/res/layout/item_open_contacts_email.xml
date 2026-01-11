@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/activity_invite_no_contacts_permission_hint_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent">
+    <TextView
+        android:textSize="16sp"
+        android:id="@+id/item_invite_open_contacts_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/participant_invite_contacts_descrption"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+    <Button
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:id="@+id/item_invite_open_contacts_button"
+        android:background="@drawable/btn_blue_states"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/participant_invite_contacts_open_button"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"
+        android:elevation="3dp"/>
+</LinearLayout>

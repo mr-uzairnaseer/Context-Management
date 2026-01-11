@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/surface_fill_white_default"
+    android:clickable="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingHorizontal="24dp">
+    <TextView
+        android:textColor="@color/text_primary_default"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/map_stats_waypoints_header"
+        style="@style/TextAppearance.Komoot.Theme2.Label01Bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_waypoints"
+        android:paddingBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

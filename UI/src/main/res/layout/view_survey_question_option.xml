@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatCheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="16sp"
+    android:textColor="@color/whisper_states"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_survey_option"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:paddingStart="12dp"
+    android:paddingEnd="8dp"/>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/packages_container"
+    android:background="@drawable/bg_ripple_on_dark"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:layout_marginTop="@dimen/default_margin_and_padding"
+    android:paddingStart="@dimen/default_margin_and_padding"
+    android:paddingEnd="@dimen/default_margin_and_padding"
+    android:outlineProvider="bounds"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/logo">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/packages_count"
+        android:background="@drawable/bg_circle_hero_green"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:fontFamily="?attr/fontBold"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/shop_maps_packages"
+        android:layout_weight="1"
+        android:fontFamily="?attr/fontBold"
+        android:layout_marginStart="8dp"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/packages_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right"
+        app:tint="@color/white"/>
+</LinearLayout>

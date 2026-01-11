@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/default_margin_and_padding"
+    android:layout_marginBottom="8dp">
+    <ImageView
+        android:id="@+id/isshv_message_inbox_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:src="0x7f080cb9"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/isshv_unread_messages_count_ttv"
+        android:visibility="gone"
+        android:layout_width="@dimen/default_margin_and_padding"
+        android:layout_height="@dimen/default_margin_and_padding"
+        android:layout_alignTop="@+id/isshv_message_inbox_icon_iv"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_alignEnd="@+id/isshv_message_inbox_icon_iv"/>
+</RelativeLayout>

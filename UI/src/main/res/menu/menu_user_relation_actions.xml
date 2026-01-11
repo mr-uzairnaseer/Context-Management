@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_follow"
+        android:title="@string/user_info_action_follow_user"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_stop_following"
+        android:title="@string/user_popup_action_stop_following"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_request_to_follow"
+        android:title="@string/user_popup_action_request_to_follow"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_accept_follow_request"
+        android:title="@string/user_popup_action_accept_follow_request"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_ignore_follow_request"
+        android:title="@string/user_popup_action_delete_follow_request"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_add_to_close_friends_list"
+        android:title="@string/user_popup_action_add_friend"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_remove_from_close_friends_list"
+        android:title="@string/user_popup_action_remove_friend"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_block_or_report_user"
+        android:title="@string/user_popup_action_block_and_report"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_unblock_user"
+        android:title="@string/user_popup_action_unblock_user"
+        app:showAsAction="never"/>
+</menu>

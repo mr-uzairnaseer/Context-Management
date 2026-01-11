@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_history_spot_item_container_rl"
+    android:background="@drawable/list_item_background_states"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <ImageView
+        android:id="@+id/hsli_icon_iv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/default_margin_and_padding"
+        android:src="0x7f080dbc"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/default_margin_and_padding"/>
+    <de.komoot.android.view.AutoFitTextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:id="@+id/hsli_spot_name_tatv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="@dimen/default_margin_and_padding"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/hsli_icon_iv"
+        android:layout_centerVertical="true"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"
+        android:layout_toEndOf="@+id/hsli_icon_iv"/>
+    <View
+        android:id="@+id/hsli_bottom_divider_v"
+        android:background="@color/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_toLeftOf="@+id/hsli_spot_name_tatv"
+        android:layout_alignLeft="@+id/hsli_spot_name_tatv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/hsli_spot_name_tatv"
+        android:layout_alignStart="@+id/hsli_spot_name_tatv"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

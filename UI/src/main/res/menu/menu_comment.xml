@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_report_comment"
+        android:title="@string/content_reporting_report_comment"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_block_or_report_user"
+        android:title="@string/user_popup_action_block"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_unblock_user"
+        android:title="@string/user_popup_action_unblock_user"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/fpa_user_avatar_civ"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:foreground="@drawable/foreground_alpha_white_round_shape_states"
+        android:src="0x7f080ce8"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="72dp"
+        app:border="false"
+        app:shadow="false"/>
+    <ProgressBar
+        android:id="@+id/fpa_process_image_progress_pb"
+        android:visibility="gone"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:indeterminate="true"
+        android:layout_alignStart="@+id/fpa_user_avatar_civ"
+        android:indeterminateTint="@color/primary"/>
+    <ImageView
+        android:id="@+id/fpa_camera_line_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:foreground="@drawable/foreground_alpha_white_round_shape_states"
+        android:src="@drawable/ic_camera"
+        android:scaleType="centerInside"
+        android:layout_below="@+id/fpa_user_avatar_civ"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        app:tint="@color/main_grey"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center_vertical"
+        android:id="@+id/fpa_profile_picture_hint_ttv"
+        android:background="@drawable/bg_pressable_text_states"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:text="@string/fpa_profile_picture_not_set_hint"
+        android:layout_below="@+id/fpa_user_avatar_civ"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="72dp"/>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/primary"
+        android:gravity="center_vertical"
+        android:id="@+id/feature_button"
+        android:background="@drawable/bg_white_with_green_effect_states"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="36dp"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+</merge>

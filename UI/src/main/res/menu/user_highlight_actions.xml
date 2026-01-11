@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_action_share_android"
+        android:id="@+id/action_share_user_highlight"
+        android:title="@string/tour_list_context_menu_share"
+        appcompat:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_more_vertical"
+        android:id="@+id/menu_action_open_hidden_menu"
+        android:title="@string/highlight_more_menu"
+        appcompat:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_report_user_highlight"
+                android:title="@string/highlight_report_hl_menu"/>
+            <item
+                android:id="@+id/action_add_highlight_image"
+                android:title="@string/highlight_add_device_image"/>
+            <item
+                android:id="@+id/action_highlight_rename"
+                android:title="@string/highlight_rename"/>
+            <item
+                android:id="@+id/menu_action_add_to_collection"
+                android:title="@string/action_add_to_collection"/>
+            <item
+                android:id="@+id/action_delete_highlight"
+                android:title="@string/user_highlight_action_delete"/>
+        </menu>
+    </item>
+</menu>

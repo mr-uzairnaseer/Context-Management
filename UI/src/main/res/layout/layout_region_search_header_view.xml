@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    android:layout_marginStart="@dimen/default_margin_and_padding"
+    android:layout_marginEnd="@dimen/default_margin_and_padding">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/mTitleTTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="?attr/fontBold"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/mDescriptionTTV"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="?attr/fontRegular"/>
+</LinearLayout>

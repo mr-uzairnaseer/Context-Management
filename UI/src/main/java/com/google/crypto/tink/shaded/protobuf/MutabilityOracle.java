@@ -1,0 +1,7 @@
+package com.google.crypto.tink.shaded.protobuf;
+
+/* loaded from: classes5.dex */
+interface MutabilityOracle {
+    public static final MutabilityOracle IMMUTABLE = new MutabilityOracle() { // from class: com.google.crypto.tink.shaded.protobuf.MutabilityOracle.1
+    };
+}

@@ -1,0 +1,7 @@
+package com.google.protobuf;
+
+/* loaded from: classes5.dex */
+interface MutabilityOracle {
+    public static final MutabilityOracle IMMUTABLE = new MutabilityOracle() { // from class: com.google.protobuf.MutabilityOracle.1
+    };
+}

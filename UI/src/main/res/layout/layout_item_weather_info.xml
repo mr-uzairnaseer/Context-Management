@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/wii_text_ttv"
+        android:background="0x7f080a7d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+</FrameLayout>

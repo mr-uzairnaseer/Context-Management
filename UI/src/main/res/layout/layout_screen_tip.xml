@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textSize="34sp"
+        android:textColor="@color/white"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="?attr/fontBold"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="?attr/fontBold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/primary"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+        <ImageButton
+            android:id="@+id/button_menu"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_vertical_gray_24dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/black_40p_solid"
+            app:tint="@color/white"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    </LinearLayout>
+</merge>

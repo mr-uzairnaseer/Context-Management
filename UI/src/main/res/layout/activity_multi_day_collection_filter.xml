@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <View
+            android:id="@+id/view_shadow"
+            android:background="@drawable/gradient_top_transparent_to_bottom_light_grey_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_above="@+id/layout_cta"/>
+        <FrameLayout
+            android:id="@+id/layout_cta"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:baselineAligned="false"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/button_results_found"
+                android:background="@drawable/btn_primary"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/multiday_collection_filter_btn_cta_v2"
+                android:lines="1"
+                android:textAllCaps="false"
+                android:fontFamily="?attr/fontRegular"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                style="?android:attr/borderlessButtonStyle"/>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

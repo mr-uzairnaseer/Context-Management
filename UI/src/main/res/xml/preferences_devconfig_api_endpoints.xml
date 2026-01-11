@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="API Endpoints"
+    android:key="pref_key_app_settings_api_endpoints">
+    <PreferenceCategory
+        android:title="API&apos;s"
+        app:iconSpaceReserved="false">
+        <ListPreference
+            android:persistent="false"
+            android:entries="@array/dev_conf_api_endpoint_values"
+            android:title="Main API"
+            android:key="pref_key_action_api_main"
+            android:defaultValue="@string/dev_conf_api_backend_production"
+            android:entryValues="@array/dev_conf_api_endpoint_values"
+            app:iconSpaceReserved="false"/>
+        <ListPreference
+            android:persistent="false"
+            android:entries="@array/dev_conf_api_endpoint_values"
+            android:title="Routing API"
+            android:key="pref_key_action_api_routing"
+            android:defaultValue="@string/dev_conf_api_backend_production"
+            android:entryValues="@array/dev_conf_api_endpoint_values"
+            app:iconSpaceReserved="false"/>
+        <ListPreference
+            android:persistent="false"
+            android:entries="@array/dev_conf_api_endpoint_values"
+            android:title="Feed API"
+            android:key="pref_key_action_api_feed"
+            android:defaultValue="@string/dev_conf_api_backend_production"
+            android:entryValues="@array/dev_conf_api_endpoint_values"
+            app:iconSpaceReserved="false"/>
+        <EditTextPreference
+            android:persistent="true"
+            android:title="Branch Name"
+            android:key="@string/app_pref_key_api_branch_name"
+            android:defaultValue=""
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:title="Web Views"
+            android:key="pref_key_api_web_views"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Other"
+        app:iconSpaceReserved="false">
+        <ListPreference
+            android:persistent="false"
+            android:title="MapBox style"
+            android:key="pref_key_action_mapbox_style"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

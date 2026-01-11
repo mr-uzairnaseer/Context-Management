@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layout_touring_stats_panel"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/layout_shadow_holder"
+        android:background="@drawable/bg_white_white_grey_with_grey_effect_states"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginBottom="3dp">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"/>
+        <de.komoot.android.view.CirclePageIndicator
+            android:id="@+id/circle_indicator"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
+            android:elevation="3dp"
+            app:radius="3dp"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_achievement_expert_and_aspirant_item_stats"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/aali_badge_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="0x7f081077"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/text_underline"
+        android:gravity="center_horizontal"
+        android:id="@+id/aali_sport_in_xy_ttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_below="@+id/aali_badge_iv"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="?attr/fontBold"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_and_padding"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_marginRight="@dimen/default_margin_and_padding"
+        android:layout_marginBottom="32dp"
+        android:text="@string/ali_more_points_hint"
+        android:layout_below="@+id/aali_sport_in_xy_ttv"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+</RelativeLayout>

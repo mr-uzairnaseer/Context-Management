@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="15dp"
+    android:width="21dp"
+    android:viewportWidth="21"
+    android:viewportHeight="15">
+    <path
+        android:fillColor="@drawable/_country_flag_gw__0_res_0x7f08020f"
+        android:pathData="M0,0h21v15h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_gw__1_res_0x7f080210"
+        android:pathData="M0,7h21v8h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_gw__2_res_0x7f080211"
+        android:pathData="M0,0h21v7h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_gw__3_res_0x7f080212"
+        android:pathData="M0,0h8v15h-8z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_gw__4_res_0x7f080213"
+        android:pathData="M4,8.4588l-1.4695,1.0638l0.5576,-1.7263l-1.4658,-1.0688l1.8141,-0.0031l0.5636,-1.7243l0.5636,1.7243l1.8141,0.0031l-1.4658,1.0688l0.5576,1.7263z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_favorite_sport_vertical_margin1">10dp</dimen>
+    <dimen name="tsha_highlight_create_marginTop">192dp</dimen>
+    <dimen name="tsha_highlight_size_height">160dp</dimen>
+</resources>

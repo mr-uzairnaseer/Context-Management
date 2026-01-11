@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentTop="true"/>
+    <ListView
+        android:id="@android:id/list"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:layout_alignParentTop="true"/>
+    <include layout="@layout/view_pick_a_region_package_fab"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+        <ImageButton
+            android:id="@+id/mrfv2_search_regions_fab_ib"
+            android:background="@drawable/btn_round_blue_states"
+            android:visibility="gone"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="@dimen/default_margin_and_padding"
+            android:src="@drawable/ic_btn_search_white"
+            android:elevation="3dp"/>
+    </FrameLayout>
+</RelativeLayout>

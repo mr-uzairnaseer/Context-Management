@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="56dp">
+    <include layout="@layout/divider_item"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="bottom"
+        android:paddingLeft="@dimen/default_margin_and_padding"
+        android:paddingRight="@dimen/default_margin_and_padding"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/ssa_show_poi_types_on_map"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontLight"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ssptsaf_poi_type_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

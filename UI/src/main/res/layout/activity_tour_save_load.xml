@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="0x7f070421"
+        android:textColor="@color/btn_white_normal"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tssca_congratulations_tv"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f070420"
+        android:text="@string/tssca_congratulations_variants"
+        android:fontFamily="?attr/fontLight"
+        android:lineHeight="0x7f070421"/>
+    <TextView
+        android:gravity="center"
+        android:background="@color/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/msg_loading"
+        android:layout_weight="1"/>
+</LinearLayout>

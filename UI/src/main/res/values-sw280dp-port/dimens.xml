@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="highlight_screen_map_height">105dp</dimen>
+    <dimen name="tour_details_map_height">157dp</dimen>
+    <dimen name="view_height_5_to_2">112dp</dimen>
+</resources>

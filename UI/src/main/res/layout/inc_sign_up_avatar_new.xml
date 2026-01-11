@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/fpa_user_avatar_civ"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="6dp"
+        android:foreground="@drawable/foreground_alpha_white_round_shape_states"
+        android:src="@drawable/ic_avatar_placeholder_2"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="6dp"
+        app:border="false"
+        app:shadow="false"/>
+    <FrameLayout
+        android:layout_gravity="end|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/fpa_camera_line_icon_iv"
+            android:background="@drawable/bg_circle_white"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_camera_01"/>
+    </FrameLayout>
+    <ProgressBar
+        android:id="@+id/fpa_process_image_progress_pb"
+        android:visibility="gone"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/primary"/>
+</FrameLayout>

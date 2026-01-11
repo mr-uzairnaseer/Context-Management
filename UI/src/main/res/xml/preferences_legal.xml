@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_legal"
+    android:key="pref_key_komoot_legal">
+    <Preference
+        android:title="@string/settings_legal_terms_of_service"
+        android:key="pref_key_komoot_legal_tos"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="@string/settings_legal_privacy"
+        android:key="pref_key_komoot_legal_privacy"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="@string/settings_legal_imprint"
+        android:key="pref_key_komoot_imprint"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="@string/settings_legal_software_licences"
+        android:key="pref_key_komoot_tp"
+        app:iconSpaceReserved="false"/>
+</PreferenceScreen>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layout_collection_details_footer"
+    android:background="@color/canvas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@color/background_green_grey_dark"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/text_primary"
+        android:gravity="bottom"
+        android:paddingBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="@string/collection_info_like_question"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        layout="@layout/layout_collection_details_actions"/>
+    <include layout="@layout/layout_users_who_liked"/>
+</LinearLayout>

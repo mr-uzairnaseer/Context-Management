@@ -1,0 +1,1792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="254229003"
+    android:versionName="2026.03.0"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes=""
+    package="de.komoot.android"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="35"/>
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <permission
+        android:label="Navigation Permission"
+        android:name="de.komoot.android.permission.NAVIGATION"
+        android:protectionLevel="signature"/>
+    <permission
+        android:label="Bluetooth Configuration Permission"
+        android:name="de.komoot.android.permission.BLECONFIG"
+        android:protectionLevel="signature"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="de.komoot.android.permission.NAVIGATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="samsungapps"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="market"/>
+        </intent>
+        <package android:name="de.komoot.android.ext.gear"/>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider"/>
+        <provider android:authorities="com.facebook.orca.provider.PlatformProvider"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+        <package android:name="com.garmin.android.apps.connectmobile"/>
+    </queries>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE"/>
+    <permission
+        android:name="de.komoot.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="de.komoot.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application
+        android:theme="@style/KmtSupportTheme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_komoot_app"
+        android:name="de.komoot.android.MainApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="false"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_komoot_app_round"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:localeConfig="@xml/locale_config">
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false"/>
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="false"/>
+        <meta-data
+            android:name="com.facebook.sdk.AutoInitEnabled"
+            android:value="false"/>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements"/>
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.Splash"
+            android:name="de.komoot.android.ui.RootActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:configChanges="screenSize|orientation"/>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_komoot_app_classic"
+            android:name="de.komoot.android.ui.RootActivityClassic"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="de.komoot.android.ui.RootActivity"
+            android:roundIcon="@mipmap/ic_komoot_app_classic_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_komoot_app_inverted"
+            android:name="de.komoot.android.ui.RootActivityInverted"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="de.komoot.android.ui.RootActivity"
+            android:roundIcon="@mipmap/ic_komoot_app_inverted_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_komoot_app"
+            android:name="de.komoot.android.ui.RootActivityDefault"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="de.komoot.android.ui.RootActivity"
+            android:roundIcon="@mipmap/ic_komoot_app_round">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.appnavigation.MainComposeActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.EdgeToEdge"
+            android:name="de.komoot.android.ui.collection.CollectionDetailsActivity"
+            android:configChanges="screenSize|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.feature.connectdevice.ui.GarminDeviceSelectionActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.feature.connectdevice.ui.GarminAuthWebActivity"
+            android:exported="false"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="de.komoot.android.feature.connectdevice.ui.GarminDeviceSelectionActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.Splash"
+            android:name="de.komoot.android.ui.deeplink.DeepLinkActivity"
+            android:exported="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="maps.app.goo.gl"
+                    android:pathPrefix="/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="google.navigation"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="geo"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="http"
+                    android:host="maps.google.com"/>
+                <data
+                    android:scheme="https"
+                    android:host="maps.google.com"/>
+                <data
+                    android:scheme="http"
+                    android:host="www.google.com"
+                    android:pathPrefix="/maps"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.google.com"
+                    android:pathPrefix="/maps"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="api.komoot.de"
+                    android:pathPrefix="/v007/mail/c"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="main-api-alpha.staging.komoot.de"
+                    android:pathPrefix="/v007/mail/c"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.komoot.de"/>
+                <data android:host="komoot.de"/>
+                <data android:host="www.komoot.com"/>
+                <data android:host="komoot.com"/>
+                <data android:host="www.komoot.fr"/>
+                <data android:host="komoot.fr"/>
+                <data android:host="www.komoot.it"/>
+                <data android:host="komoot.it"/>
+                <data android:host="www.komoot.es"/>
+                <data android:host="komoot.es"/>
+                <data android:host="www.komoot.nl"/>
+                <data android:host="komoot.nl"/>
+                <data android:scheme="komoot"/>
+                <data android:pathPrefix="/plan"/>
+                <data android:pathPattern="/.*/plan.*"/>
+                <data android:pathPrefix="/start"/>
+                <data android:pathPattern="/.*/start.*"/>
+                <data android:pathPrefix="/tour/"/>
+                <data android:pathPattern="/.*/tour/.*"/>
+                <data android:pathPrefix="/after-tour-wizzard/"/>
+                <data android:pathPattern="/.*/after-tour-wizzard/.*"/>
+                <data android:pathPrefix="/invite-tour/"/>
+                <data android:pathPattern="/.*/invite-tour/.*"/>
+                <data android:pathPrefix="/user/"/>
+                <data android:pathPattern="/.*/user/.*"/>
+                <data android:pathPrefix="/highlight/"/>
+                <data android:pathPattern="/.*/highlight/.*"/>
+                <data android:pathPrefix="/product/subscription"/>
+                <data android:pathPattern="/.*/product/subscription.*"/>
+                <data android:pathPrefix="/product/complete-package"/>
+                <data android:pathPattern="/.*/product/complete-package.*"/>
+                <data android:pathPrefix="/product/world-pack"/>
+                <data android:pathPattern="/.*/product/world-pack.*"/>
+                <data android:pathPrefix="/premium"/>
+                <data android:pathPattern="/.*/premium.*"/>
+                <data android:pathPrefix="/product/region"/>
+                <data android:pathPattern="/.*/product/region.*"/>
+                <data android:pathPrefix="/customize"/>
+                <data android:pathPattern="/.*/customize.*"/>
+                <data android:pathPrefix="/collection"/>
+                <data android:pathPattern="/.*/collection.*"/>
+                <data android:pathPrefix="/multiday-library"/>
+                <data android:pathPattern="/.*/multiday-library/.*"/>
+                <data android:pathPrefix="/guide"/>
+                <data android:pathPattern="/.*/guide.*"/>
+                <data android:pathPrefix="/smarttour"/>
+                <data android:pathPattern="/.*/smarttour.*"/>
+                <data android:pathPrefix="/highlight-create"/>
+                <data android:pathPattern="/.*/highlight-create.*"/>
+                <data android:pathPrefix="/discover"/>
+                <data android:pathPattern="/.*/discover.*"/>
+                <data android:pathPrefix="/action/community/join"/>
+                <data android:pathPattern="/.*/action/community/join.*"/>
+                <data android:pathPrefix="/account/safety-contacts"/>
+                <data android:pathPattern="/.*/account/safety-contacts.*"/>
+                <data android:pathPrefix="/account"/>
+                <data android:pathPattern="/.*/account.*"/>
+                <data android:pathPrefix="/account/notifications"/>
+                <data android:pathPattern="/.*/account/notifications.*"/>
+                <data android:pathPrefix="/account/newsletter"/>
+                <data android:pathPattern="/.*/account/newsletter.*"/>
+                <data android:pathPrefix="/product/promotion"/>
+                <data android:pathPrefix="/campaign/adventure-into-spring"/>
+                <data android:pathPattern="/.*/campaign/adventure-into-spring.*"/>
+                <data android:pathPrefix="/login_user"/>
+                <data android:pathPrefix="/connect-garmin"/>
+                <data android:pathPattern="/.*/connect-garmin.*"/>
+                <data android:pathPrefix="/treasure-hunt-in-app"/>
+                <data android:pathPattern="/.*/treasure-hunt-in-app.*"/>
+                <data android:pathPrefix="/redeem-prize"/>
+                <data android:pathPattern="/.*/redeem-prize.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.komoot.de"/>
+                <data android:host="komoot.de"/>
+                <data android:host="www.komoot.com"/>
+                <data android:host="komoot.com"/>
+                <data android:host="www.komoot.fr"/>
+                <data android:host="komoot.fr"/>
+                <data android:host="www.komoot.it"/>
+                <data android:host="komoot.it"/>
+                <data android:host="www.komoot.es"/>
+                <data android:host="komoot.es"/>
+                <data android:host="www.komoot.nl"/>
+                <data android:host="komoot.nl"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:pathPrefix="/plan"/>
+                <data android:pathPattern="/.*/plan.*"/>
+                <data android:pathPrefix="/start"/>
+                <data android:pathPattern="/.*/start.*"/>
+                <data android:pathPrefix="/tour/"/>
+                <data android:pathPattern="/.*/tour/.*"/>
+                <data android:pathPrefix="/invite-tour/"/>
+                <data android:pathPattern="/.*/invite-tour/.*"/>
+                <data android:pathPrefix="/user/"/>
+                <data android:pathPattern="/.*/user/.*"/>
+                <data android:pathPrefix="/highlight/"/>
+                <data android:pathPattern="/.*/highlight/.*"/>
+                <data android:pathPrefix="/product/subscription"/>
+                <data android:pathPattern="/.*/product/subscription.*"/>
+                <data android:pathPrefix="/product/complete-package"/>
+                <data android:pathPattern="/.*/product/complete-package.*"/>
+                <data android:pathPrefix="/product/world-pack"/>
+                <data android:pathPattern="/.*/product/world-pack.*"/>
+                <data android:pathPrefix="/premium"/>
+                <data android:pathPattern="/.*/premium.*"/>
+                <data android:pathPrefix="/product/region"/>
+                <data android:pathPattern="/.*/product/region.*"/>
+                <data android:pathPrefix="/customize"/>
+                <data android:pathPattern="/.*/customize.*"/>
+                <data android:pathPrefix="/collection"/>
+                <data android:pathPattern="/.*/collection/.*"/>
+                <data android:pathPrefix="/multiday-library"/>
+                <data android:pathPattern="/.*/multiday-library/.*"/>
+                <data android:pathPrefix="/guide"/>
+                <data android:pathPattern="/.*/guide/.*"/>
+                <data android:pathPrefix="/smarttour"/>
+                <data android:pathPattern="/.*/smarttour/.*"/>
+                <data android:pathPrefix="/highlight-create"/>
+                <data android:pathPattern="/.*/highlight-create.*"/>
+                <data android:pathPrefix="/discover"/>
+                <data android:pathPattern="/.*/discover.*"/>
+                <data android:pathPrefix="/action/community/join"/>
+                <data android:pathPattern="/.*/action/community/join.*"/>
+                <data android:pathPrefix="/account/safety-contacts"/>
+                <data android:pathPattern="/.*/account/safety-contacts.*"/>
+                <data android:pathPrefix="/account"/>
+                <data android:pathPattern="/.*/account.*"/>
+                <data android:pathPrefix="/account/notifications"/>
+                <data android:pathPattern="/.*/account/notifications.*"/>
+                <data android:pathPrefix="/account/newsletter"/>
+                <data android:pathPattern="/.*/account/newsletter.*"/>
+                <data android:pathPrefix="/product/promotion"/>
+                <data android:pathPrefix="/campaign/adventure-into-spring"/>
+                <data android:pathPattern="/.*/campaign/adventure-into-spring.*"/>
+                <data android:pathPrefix="/connect-garmin"/>
+                <data android:pathPattern="/.*/connect-garmin.*"/>
+                <data android:pathPrefix="/treasure-hunt-in-app"/>
+                <data android:pathPattern="/.*/treasure-hunt-in-app.*"/>
+                <data android:pathPrefix="/redeem-prize"/>
+                <data android:pathPattern="/.*/redeem-prize.*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="komoot"
+                    android:host="connect-garmin"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.fcm.FcmTrackAndForwardActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.planning.PlanningActivity"
+            android:launchMode="singleTask"
+            android:alwaysRetainTaskState="true"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/sport_specific_map_select_title"
+            android:name="de.komoot.android.ui.planning.MapVariantSelectActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.planning.WaypointSearchActivity"
+            android:parentActivityName="de.komoot.android.ui.planning.PlanningActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/ssha_title"
+            android:name="de.komoot.android.ui.planning.SpotSearchHistoryActivity"
+            android:parentActivityName="de.komoot.android.ui.planning.WaypointSearchActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/ssha_title"
+            android:name="de.komoot.android.ui.planning.SavedPlacesActivity"
+            android:parentActivityName="de.komoot.android.ui.planning.WaypointSearchActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar"
+            android:name="de.komoot.android.ui.inspiration.SpotAndRadiusMapActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.tour.TourSportSelectActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.feature.appsettings.ui.account.FavoriteSportSelectV3Activity"
+            android:parentActivityName="de.komoot.android.feature.appsettings.ui.SettingsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.EdgeToEdge"
+            android:name="de.komoot.android.ui.onboarding.revamp.ui.OnboardingActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.Onboarding.Dark"
+            android:name="de.komoot.android.ui.login.WhatsNewActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar"
+            android:name="de.komoot.android.ui.touring.power.XiaomiPowerActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.update.UpdateAvailableActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.fcm.RouteUpdateNotificationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.aftertour.AfterTourActivity"
+            android:parentActivityName="de.komoot.android.ui.user.UserInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label=""
+            android:name="de.komoot.android.ui.tour.TourInformationActivity"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="de.komoot.android.ui.user.TourListActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/share_profile_qr_share"
+            android:name="de.komoot.android.ui.user.ShareProfileQrCodeActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/tour_share_invite_screen_title"
+            android:name="de.komoot.android.ui.sharetour.ShareInviteRouteActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/tour_share_invite_screen_title"
+            android:name="de.komoot.android.ui.sharetour.ShareInviteRecordedTourActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/change_visibility_screen_title"
+            android:name="de.komoot.android.ui.tour.privacy.ChangeRouteVisibilityActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/change_visibility_screen_title"
+            android:name="de.komoot.android.ui.tour.privacy.ChangeRecordedTourVisibilityActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/instagram_share_screen_title"
+            android:name="de.komoot.android.ui.instagram.InstagramImageActivity"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label=""
+            android:name="de.komoot.android.ui.tour.RouteInformationActivity"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="de.komoot.android.ui.user.TourListActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label=""
+            android:name="de.komoot.android.ui.tour.RouteAlertsListActivity"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="de.komoot.android.ui.tour.RouteInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label=""
+            android:name="de.komoot.android.ui.tour.PlannedTourGalleryActivity"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="de.komoot.android.ui.tour.RouteInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label=""
+            android:name="de.komoot.android.ui.highlight.UserHighlightInformationActivity"
+            android:parentActivityName="de.komoot.android.ui.RootActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label=""
+            android:name="de.komoot.android.ui.user.impact.UserHighlightImpactActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label=""
+            android:name="de.komoot.android.ui.user.contributions.ContributionsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.tour.EditTourActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.tour.TourDescriptionEditFullScreenActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.invitation.TourParticipantsEditActivity"
+            android:parentActivityName="de.komoot.android.ui.tour.TourInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.highlight.CreateHighlightSelectPositionActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:label=""
+            android:name="de.komoot.android.ui.highlight.CreateHighlightSelectPhotoActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:label=""
+            android:name="de.komoot.android.ui.highlight.CreateHighlightWizardActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.feature.appsettings.ui.DataUsageActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar"
+            android:name="de.komoot.android.ui.user.HighlightsListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar"
+            android:name="de.komoot.android.feature.highlightslist.ui.search.HighlightsSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.user.CollectionsListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/cnca_activity_title"
+            android:name="de.komoot.android.ui.collection.CreateNewCollectionActivity"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/fcca_activity_title"
+            android:name="de.komoot.android.ui.collection.FindCollectionContentActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:label="@string/scia_activity_title"
+            android:name="de.komoot.android.ui.collection.SelectCollectionCoverImageActivity"
+            android:parentActivityName="de.komoot.android.ui.collection.CollectionEditActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/collection_edit_tite"
+            android:name="de.komoot.android.ui.collection.CollectionEditActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/chcfa_activity_title"
+            android:name="de.komoot.android.ui.user.ConfigHighlightsFilterActivity"
+            android:parentActivityName="de.komoot.android.ui.collection.FindCollectionContentActivity"/>
+        <activity
+            android:theme="@style/KmtSupportThemeWithMaterialComponents"
+            android:label="@string/chcfa_activity_title"
+            android:name="de.komoot.android.ui.collection.TourFilterActivity"
+            android:parentActivityName="de.komoot.android.ui.collection.FindCollectionContentActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.WithSearchView"
+            android:name="de.komoot.android.ui.collection.TourSelectionSearchActivity"
+            android:parentActivityName="de.komoot.android.ui.collection.FindCollectionContentActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.WithSearchView"
+            android:name="de.komoot.android.ui.collection.HighlightSelectionSearchActivity"
+            android:parentActivityName="de.komoot.android.ui.collection.FindCollectionContentActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.tour.TourParticipantsViewActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.app.UserListV2Activity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.Translucent.Fullscreen"
+            android:name="de.komoot.android.ui.ImageActivity"
+            android:screenOrientation="unspecified"
+            android:configChanges="screenSize|orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.FeedbackForm"
+            android:name="de.komoot.android.feature.feedbackform.ui.FeedbackFormActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.touring.MapActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/search_conf"/>
+        </activity>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg"
+            android:label="@string/opf_feature_live_tracking_title"
+            android:name="de.komoot.android.ui.live.LiveTrackingActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:parentActivityName="de.komoot.android.ui.touring.MapActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar.WithSearchView"
+            android:name="de.komoot.android.ui.live.safety.SafetyContactsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.feature.appsettings.ui.FacebookLoginActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.WebActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.AuthedWebActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.PdfActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.aftertour.LoadTourForAfterTourWizardActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.aftertour.SportAfterTourWizardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.aftertour.RatingAfterTourWizardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.aftertour.PhotoSelectAfterTourWizardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:name="de.komoot.android.ui.aftertour.TourSaveManagePhotosFullscreenActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.aftertour.HighlightsAfterTourWizardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.aftertour.TagParticipantsAfterTourWizardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.feature.mapspaywall.MapsPaywallActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.tour.TourImageGridActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.region.RegionSearchActivityV2"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/search_conf"/>
+        </activity>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.region.RegionsActivity"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/mia_activity_title"
+            android:name="de.komoot.android.ui.user.MessageInboxActivity"
+            android:parentActivityName="de.komoot.android.ui.RootActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.region.RegionDetailActivityV2"
+            android:screenOrientation="portrait"
+            android:parentActivityName="de.komoot.android.ui.region.RegionsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:label="@string/purchase_product_cp_subtitle"
+            android:name="de.komoot.android.ui.region.WorldPackDetailActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.EdgeToEdge"
+            android:name="de.komoot.android.ui.login.JoinKomootActivityV2"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.Translucent"
+            android:name="de.komoot.android.ui.login.JoinKomootActivityV3"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.EdgeToEdge"
+            android:name="de.komoot.android.feature.welcome.WelcomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.feature.planscomparisonpaywall.PlansComparisonPaywallActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/TransparentTheme"
+            android:name="de.komoot.android.feature.npssurvey.ui.NpsSurveyActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.EdgeToEdge"
+            android:name="de.komoot.android.ui.login.LoginSignUpEmailActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:parentActivityName="de.komoot.android.ui.login.JoinKomootActivityV2"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.EdgeToEdge"
+            android:name="de.komoot.android.ui.login.LoginPasswordActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:parentActivityName="de.komoot.android.ui.login.JoinKomootActivityV2"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.login.ResetPasswordActivityV2"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:parentActivityName="de.komoot.android.ui.login.LoginPasswordActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.EdgeToEdge"
+            android:name="de.komoot.android.ui.login.SignUpPasswordActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:parentActivityName="de.komoot.android.ui.login.JoinKomootActivityV2"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.EdgeToEdge"
+            android:name="de.komoot.android.ui.login.FillProfileActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:parentActivityName="de.komoot.android.ui.login.JoinKomootActivityV2"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.login.AuthCodeLoginActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/settings_screen_title"
+            android:name="de.komoot.android.feature.appsettings.ui.SettingsActivity"
+            android:configChanges="orientation"
+            android:parentActivityName="de.komoot.android.ui.RootActivity"/>
+        <activity
+            android:name="de.komoot.android.feature.appsettings.ui.WebSubscriptionActivity"
+            android:exported="false"/>
+        <activity
+            android:name="de.komoot.android.app.DebugLoginActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/settings_dev_settings"
+            android:name="de.komoot.android.feature.appsettings.ui.developer.DevMapDownloaderActivity"
+            android:parentActivityName="de.komoot.android.feature.appsettings.ui.SettingsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/settings_dev_settings"
+            android:name="de.komoot.android.feature.appsettings.ui.developer.FeatureFlagsActivity"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/settings_dev_settings"
+            android:name="de.komoot.android.feature.appsettings.ui.developer.LimitsActivity"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/settings_dev_settings"
+            android:name="de.komoot.android.feature.appsettings.ui.developer.EventsLogActivity"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/epa_screen_title"
+            android:name="de.komoot.android.ui.user.EditProfileActivity"
+            android:parentActivityName="de.komoot.android.feature.appsettings.ui.SettingsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/eha_screen_title"
+            android:name="de.komoot.android.ui.user.homeaddress.EditHomeAddressActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/edit_saved_place_title"
+            android:name="de.komoot.android.ui.user.savedplace.EditSavedPlaceActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/saved_places_title"
+            android:name="de.komoot.android.ui.user.savedplace.SavedPlacesListActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/add_saved_place_title"
+            android:name="de.komoot.android.ui.user.savedplace.AddSavedPlaceActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/cpa_screen_title"
+            android:name="de.komoot.android.ui.user.ChangePasswordActivity"
+            android:parentActivityName="de.komoot.android.ui.user.EditProfileActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/cpa_screen_title"
+            android:name="de.komoot.android.ui.user.ChangeEmailActivity"
+            android:parentActivityName="de.komoot.android.ui.user.EditProfileActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.feature.appsettings.ui.NotificationSettingsActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:parentActivityName="de.komoot.android.feature.appsettings.ui.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.user.FollowerListActivity"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.user.requests.FollowRequestsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.tour.TrackImportActivity"
+            android:exported="true"
+            android:parentActivityName="de.komoot.android.ui.tour.SelectTrackActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/fit"/>
+                <data android:mimeType="application/gpx"/>
+                <data android:mimeType="application/gpx+xml"/>
+                <data android:mimeType="application/xml"/>
+                <data android:mimeType="application/tcx"/>
+                <data android:mimeType="application/vnd.garmin.tcx+xml"/>
+                <data android:mimeType="application/vnd.ant.fit"/>
+                <data android:mimeType="text/xml"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/octet-stream"/>
+                <data android:pathPattern=".*.gpx"/>
+                <data android:pathPattern=".*.GPX"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.tcx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.fit"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.GPX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.TCX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.FIT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*..*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*..*..*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*.GPX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*.GPX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*.GPX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*..*.GPX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*..*..*.GPX"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:mimeType="*/*"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*..*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*..*..*.gpx"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*.GPX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*.GPX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*.GPX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*..*.GPX"/>
+                <data
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*..*..*..*..*.GPX"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="http"
+                    android:host="*"
+                    android:pathPattern=".*\\.gpx"/>
+                <data
+                    android:scheme="https"
+                    android:host="*"
+                    android:pathPattern=".*\\.gpx"/>
+                <data
+                    android:scheme="http"
+                    android:host="*"
+                    android:pathPattern=".*\\.tcx"/>
+                <data
+                    android:scheme="https"
+                    android:host="*"
+                    android:pathPattern=".*\\.tcx"/>
+                <data
+                    android:scheme="http"
+                    android:host="*"
+                    android:pathPattern=".*\\.fit"/>
+                <data
+                    android:scheme="https"
+                    android:host="*"
+                    android:pathPattern=".*\\.fit"/>
+                <data
+                    android:scheme="http"
+                    android:host="*"
+                    android:pathPattern=".*\\.GPX"/>
+                <data
+                    android:scheme="https"
+                    android:host="*"
+                    android:pathPattern=".*\\.GPX"/>
+                <data
+                    android:scheme="http"
+                    android:host="*"
+                    android:pathPattern=".*\\.TCX"/>
+                <data
+                    android:scheme="https"
+                    android:host="*"
+                    android:pathPattern=".*\\.TCX"/>
+                <data
+                    android:scheme="http"
+                    android:host="*"
+                    android:pathPattern=".*\\.FIT"/>
+                <data
+                    android:scheme="https"
+                    android:host="*"
+                    android:pathPattern=".*\\.FIT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label=""
+            android:name="de.komoot.android.ui.tour.SelectTrackActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.user.UserInformationActivity"
+            android:configChanges="orientation"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.user.UserAchievementsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.pioneer.PioneerProgramOptInActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.pioneer.PioneerSportRegionRankingActivity"
+            android:parentActivityName="de.komoot.android.ui.user.UserAchievementsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.user.TourListActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="de.komoot.android.ui.user.UserInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.user.TourListComposeActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="de.komoot.android.ui.user.UserInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.WithSearchView"
+            android:name="de.komoot.android.ui.highlight.CreateHighlightSelectTourActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.WithSearchView"
+            android:name="de.komoot.android.ui.premium.WeatherShowcaseTourListActivity"
+            android:parentActivityName="de.komoot.android.ui.premium.PremiumBenefitsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar.WithSearchView"
+            android:label="@string/ffa_activity_name"
+            android:name="de.komoot.android.ui.social.findfriends.FindFriendsActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/fffa_activity_name"
+            android:name="de.komoot.android.ui.social.FindFacebookFriendsActivity"
+            android:parentActivityName="de.komoot.android.ui.social.findfriends.FindFriendsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/highlight_write_tipps_title"
+            android:name="de.komoot.android.ui.highlight.UserHighlightWriteTipActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/tour_comment_title"
+            android:name="de.komoot.android.ui.social.CommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.social.LikesListActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/comment_likes_title"
+            android:name="de.komoot.android.ui.social.EditCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/ble_activity_title"
+            android:name="de.komoot.android.ui.external.BluetoothOverviewActivity"
+            android:parentActivityName="de.komoot.android.feature.appsettings.ui.SettingsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/ble_activity_title"
+            android:name="de.komoot.android.ui.external.YamahaConnectActivity"
+            android:parentActivityName="de.komoot.android.ui.external.BluetoothOverviewActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/ble_activity_title"
+            android:name="de.komoot.android.ui.external.BLEConnectV1ConnectActivity"
+            android:permission="de.komoot.android.permission.BLECONFIG"
+            android:exported="true"
+            android:parentActivityName="de.komoot.android.ui.external.BluetoothOverviewActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/garmin_connect_activity_title"
+            android:name="de.komoot.android.ui.external.GarminConnectActivity"
+            android:parentActivityName="de.komoot.android.feature.appsettings.ui.SettingsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.external.GarminHistoryImportActivity"
+            android:exported="true"
+            android:parentActivityName="de.komoot.android.ui.user.UserInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/garmin_connect_activity_title"
+            android:name="de.komoot.android.ui.external.GarminConnectWebViewActivity"
+            android:parentActivityName="de.komoot.android.ui.external.GarminConnectActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/user_stats_title"
+            android:name="de.komoot.android.ui.user.UserStatsActivity"
+            android:parentActivityName="de.komoot.android.ui.user.UserInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/user_info_stats_tours"
+            android:name="de.komoot.android.ui.user.UserTourSummaryMapActivity"
+            android:parentActivityName="de.komoot.android.ui.user.UserInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.tour.video.TourVideoRenderPreviewActivity"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="de.komoot.android.ui.tour.TourInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.WithSearchView"
+            android:label="@string/fca_activity_name"
+            android:name="de.komoot.android.ui.social.FindContactsActivity"
+            android:parentActivityName="de.komoot.android.ui.social.findfriends.FindFriendsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.invitation.InviteParticipantsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/contact_details_title"
+            android:name="de.komoot.android.ui.invitation.contactdetails.ContactDetailsActivity"
+            android:parentActivityName="de.komoot.android.ui.invitation.InviteParticipantsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:label="@string/multiday_wizzard_intro_title"
+            android:name="de.komoot.android.ui.multiday.MultiDayIntroActivity"
+            android:parentActivityName="de.komoot.android.ui.user.UserInformationActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.multiday.MultiDayAdventureDiscoveryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:name="de.komoot.android.ui.multiday.MultiDayStagesActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.ui.multiday.MultiDayAdjustActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:name="de.komoot.android.ui.multiday.MultiDayPlanningMapActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoBg.NoActionBar.Translucent.Fullscreen"
+            android:label="@string/multiday_create_collection_title"
+            android:name="de.komoot.android.ui.multiday.CreateMultiDayCollectionActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:name="de.komoot.android.ui.premium.PremiumDiscountDetailActivity"
+            android:parentActivityName="de.komoot.android.ui.premium.PremiumBenefitsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:name="de.komoot.android.ui.premium.PremiumBenefitsActivity"/>
+        <activity
+            android:name="de.komoot.android.feature.appsettings.ui.LanguagePreferenceActivity"
+            android:enableOnBackInvokedCallback="true"/>
+        <activity android:name="de.komoot.android.feature.appsettings.ui.WebViewEndpointSettingsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.ActionBar.Overlay"
+            android:name="de.komoot.android.ui.premium.PremiumFeatureDetailActivity"
+            android:parentActivityName="de.komoot.android.ui.premium.PremiumBenefitsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.app.MapTestActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.feature.appsettings.ui.developer.HallOfFameActivity"
+            android:parentActivityName="de.komoot.android.feature.appsettings.ui.SettingsActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:label="@string/tour_photo_select_title"
+            android:name="de.komoot.android.ui.instagram.selectimage.SelectPhotoActivity"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="de.komoot.android.ui.instagram.InstagramImageActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.feature.userprofile.ui.regions.RegionsListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.settings.LogOutActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.feature.userprofile.ui.edit.DeleteAccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme"
+            android:name="de.komoot.android.feature.userprofile.ui.edit.DeleteFacebookAccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.user.streak.UserStreakDetailActivity"/>
+        <activity
+            android:theme="@style/KmtSupportTheme.NoActionBar"
+            android:name="de.komoot.android.ui.user.streak.StreakCampaignDetailActivity"/>
+        <service
+            android:name="de.komoot.android.ui.user.unreadmessages.UnreadMessageCountUpdateService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service
+            android:name="de.komoot.android.services.CoverImageUploadJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service
+            android:name="de.komoot.android.ble.common.service.BLECommunicationService"
+            android:exported="false"/>
+        <service
+            android:label="@string/manifest_offline_map_service_label"
+            android:name="de.komoot.android.services.maps.MapDownloadService"
+            android:exported="false"/>
+        <service
+            android:label="@string/manifest_touring_service_label"
+            android:name="de.komoot.android.services.touring.TouringService"
+            android:permission="android.permission.FOREGROUND_SERVICE_LOCATION"
+            android:exported="false"
+            android:foregroundServiceType="location"/>
+        <service
+            android:label="@string/manifest_app_config_service"
+            android:name="de.komoot.android.services.AppConfigService"
+            android:exported="false"/>
+        <service
+            android:label="@string/manifest_tour_uploader_service_label"
+            android:name="de.komoot.android.recording.TourUploadService"
+            android:exported="false"/>
+        <receiver
+            android:name="de.komoot.android.recording.EnvironmentObservingTourUploadTrigger"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="de.komoot.android.crashlog.LogCatService"
+            android:foregroundServiceType="shortService"/>
+        <service
+            android:name="de.komoot.android.crashlog.LogUploadJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+        <service
+            android:name="de.komoot.android.fcm.KmtFcmListenerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="de.komoot.android.fcm.StatusBarNotificationActionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="de.komoot.android.action.TOUR_INVITE_ACCEPT"/>
+                <action android:name="de.komoot.android.action.TOUR_INVITE_DECLINE"/>
+                <category android:name="de.komoot.android.category.NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="de.komoot.android.eventtracking.AppUpdateReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="de.komoot.android.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <service
+            android:label="external navigation service"
+            android:name="de.komoot.android.services.touring.external.KECPService"
+            android:permission="de.komoot.android.permission.NAVIGATION"
+            android:exported="true"/>
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true"/>
+        </service>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token"/>
+        <activity
+            android:theme="@style/com_facebook_activity_theme"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.de.komoot.android"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"
+            android:authorities="com.facebook.app.FacebookContentProvider216222385104691"/>
+        <meta-data
+            android:name="buildNumber"
+            android:value="{buildNumber}"/>
+        <profileable
+            android:enabled="true"
+            android:shell="true"/>
+        <service
+            android:name="de.komoot.android.core.wear.WearComListenerService"
+            android:exported="true">
+            <intent-filter>
+                <data
+                    android:scheme="wear"
+                    android:host="*"/>
+                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED"/>
+                <action android:name="com.google.android.gms.wearable.CAPABILITY_CHANGED"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/TransparentTheme"
+            android:name="de.komoot.android.feature.regionunlock.ui.RegionUnlockOfferBottomSheetActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"/>
+        <service
+            android:name="de.komoot.android.recording.TourUploadJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="de.komoot.android.feature.npssurveyv2.ui.NpsSurveyV2Activity"
+            android:exported="false"/>
+        <service
+            android:name="de.komoot.android.eventtracker.service.EventTransferService"
+            android:enabled="true"/>
+        <receiver android:name="de.komoot.android.eventtracker.service.SendEventsAlarmReceiver"/>
+        <service
+            android:name="de.komoot.android.eventtracker.service.EventSendingJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/SecretMenuTransparent"
+            android:name="com.bendingspoons.oracle.secretmenu.RedeemGiftCodeActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name="com.bendingspoons.oracle.OracleLoginActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.bendingspoons.oracle.impl.authentication.OracleAuthLauncherActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.bendingspoons.oracle.impl.authentication.OracleCallbackActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="myapp"
+                    android:host="callback"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/SecretMenuTransparent"
+            android:name="com.bendingspoons.concierge.ui.secretmenu.IDsActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
+        <activity
+            android:theme="@style/Theme.AppCompat"
+            android:name="com.bendingspoons.secretmenu.ui.SecretMenuActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.NoDisplay"
+            android:name="com.bendingspoons.secretmenu.ui.items.exit.ExitActivity"
+            android:autoRemoveFromRecents="true"/>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <service
+            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            android:enabled="true"
+            android:exported="false">
+            <meta-data
+                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity
+            android:theme="@style/Theme.Hidden"
+            android:name="androidx.credentials.playservices.HiddenActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden"
+            android:fitsSystemWindows="true"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true"/>
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="7.1.1"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true"/>
+        </receiver>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="de.komoot.android.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true"/>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true"/>
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager.CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true"/>
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false"/>
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false"/>
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="de.komoot.android.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="io.realm.kotlin.internal.RealmInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.view.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:exported="false"
+            android:authorities="de.komoot.android.com.squareup.picasso"/>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct"/>
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <activity
+            android:theme="@style/Theme.PlayCore.Transparent"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true"/>
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true"/>
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store"/>
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="3"/>
+    </application>
+</manifest>

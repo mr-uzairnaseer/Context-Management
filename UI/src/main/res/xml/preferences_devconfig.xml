@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_dev_settings"
+    android:key="pref_key_app_settings">
+    <PreferenceCategory
+        android:title="Click for more:"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:persistent="false"
+            android:title="Debug Options"
+            android:key="pref_key_debug_options"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Reporting Options"
+            android:key="pref_key_reporting_options"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Touring Options"
+            android:key="pref_key_touring_options"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Payment Options"
+            android:key="pref_key_payment_options"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="User Config Options"
+            android:key="pref_key_dev_option_user_config"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Dev options"
+        android:key="pref_key_dev_options"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:persistent="false"
+            android:title="Feature Flags"
+            android:key="pref_key_feature_flags"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Limits"
+            android:key="pref_key_limits"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Offlined Maps"
+            android:key="pref_key_offline_maps"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="API endpoints"
+            android:key="pref_key_api_endpoints"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Recording database"
+            android:key="pref_key_recording_db"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Realm database"
+            android:key="pref_key_realm_db"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Analytics"
+        android:key="pref_key_dev_ab_tests"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:persistent="false"
+            android:title="Event Logs"
+            android:key="pref_key_event_logs"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Force Send Events"
+            android:key="pref_key_eventtracker_force_send"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Test NPS Widget"
+            android:key="pref_key_test_nps"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:title="Analytics Event Tracker"
+            android:key="pref_key_event_tracker_info"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Device and Build Info"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/settings_device_info"
+            android:key="pref_key_device_info"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:title="@string/settings_memory_info"
+            android:key="pref_key_memory_info"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:title="@string/settings_app_info"
+            android:key="pref_key_app_version"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:title="@string/settings_app_id"
+            android:key="pref_key_app_id"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:title="@string/settings_build_info"
+            android:key="pref_key_build_info"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:title="@string/settings_release_store"
+            android:key="pref_key_build_release_store"
+            android:summary="@string/config_release_store"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:title="@string/settings_app_developer"
+            android:key="pref_key_app_devs"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/container_tour_visibility"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+        <ImageView
+            android:id="@+id/imageview_tour_visibility"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="0x7f080d78"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:id="@+id/textview_tour_visibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tour_visibility_component_description"
+            android:singleLine="true"
+            android:fontFamily="?attr/fontRegular"
+            android:layout_marginStart="32dp"/>
+        <de.komoot.android.widget.UsernameTextView
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:id="@+id/usernametextview_tour_visibility"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_weight="1"
+            android:fontFamily="?attr/fontBold"
+            android:layout_marginStart="4dp"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/secondary"
+            android:layout_gravity="end|center_vertical"
+            android:id="@+id/textview_tour_visibility_change"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rwdl_change"/>
+    </LinearLayout>
+    <include layout="@layout/divider_item"/>
+</LinearLayout>

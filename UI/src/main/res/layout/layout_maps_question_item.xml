@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:paddingTop="24dp"
+    android:paddingBottom="@dimen/default_margin_and_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/default_margin_and_padding"
+    android:paddingEnd="@dimen/default_margin_and_padding">
+    <de.komoot.android.ui.surveys.SurveyQuestionView
+        android:id="@+id/question"
+        android:background="@drawable/bg_canvas_rounded_12dp"
+        android:padding="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

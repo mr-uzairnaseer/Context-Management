@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/default_margin_and_padding"
+    android:paddingEnd="@dimen/default_margin_and_padding">
+    <View
+        android:background="@color/divider"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="72dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:id="@+id/text_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/multiday_collection_filter_no_result"
+        android:fontFamily="?attr/fontRegular"/>
+</LinearLayout>

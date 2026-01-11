@@ -1,0 +1,10 @@
+package androidx.compose.foundation.text.input.internal;
+
+import android.view.inputmethod.SelectRangeGesture;
+
+/* loaded from: classes2.dex */
+public final /* synthetic */ class u {
+    public static /* bridge */ /* synthetic */ boolean a(Object obj) {
+        return obj instanceof SelectRangeGesture;
+    }
+}

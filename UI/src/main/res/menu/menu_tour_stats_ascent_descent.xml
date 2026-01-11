@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_ascent"
+        android:title="@string/tour_information_menu_show_ascent"/>
+    <item
+        android:id="@+id/menu_item_descent"
+        android:title="@string/tour_information_menu_show_descent"/>
+    <item
+        android:id="@+id/menu_item_elevation_profile"
+        android:title="@string/map_touring_action_menu_info_elevation"/>
+</menu>

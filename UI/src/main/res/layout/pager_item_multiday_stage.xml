@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:id="@+id/textview_title"
+        android:background="@drawable/btn_white_r5dp_ripple_dark_green"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:elevation="5dp"/>
+</FrameLayout>

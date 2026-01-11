@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_routing_feedback_steep_uphill"
+        android:title="@string/routing_feedback_menu_steep_uphill"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_routing_feedback_steep_downhill"
+        android:title="@string/routing_feedback_menu_steep_downhill"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_routing_feedback_other"
+        android:title="@string/routing_feedback_menu_other"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+</menu>

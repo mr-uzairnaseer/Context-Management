@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/btn_white_bg_grey_effect_states"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/layout_user_highlight_list_item"/>
+    <CheckBox
+        android:textSize="16sp"
+        android:textColor="@color/checkbox_color_states"
+        android:id="@+id/toggle_selection_tcb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_marginBottom="36dp"
+        android:text="@string/fcca_item_add_to_collection"
+        android:fontFamily="?attr/fontBold"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>

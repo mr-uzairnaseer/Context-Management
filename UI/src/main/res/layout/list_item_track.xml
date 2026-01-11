@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="@+id/map_stub"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+    <include
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"
+        layout="@layout/layout_generic_tour_stats"/>
+    <Button
+        android:id="@+id/mSelectTrackCtaB"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:text="@string/sta_list_item_import_tour_cta"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"
+        style="@style/KmtWidget.GpxImport.Button.Green"/>
+    <View
+        android:background="@color/disabled_grey"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

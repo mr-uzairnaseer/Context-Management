@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/surface_fill_primary_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="32dp">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/secondary"
+        android:gravity="center_vertical"
+        android:id="@+id/prabli_contribute_more_button_ttv"
+        android:paddingLeft="@dimen/default_margin_and_padding"
+        android:paddingRight="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/prrli_constribute_now"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontRegular"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/secondary"
+        android:gravity="center_vertical"
+        android:id="@+id/prabli_read_more_about_pioneers_button_ttv"
+        android:paddingLeft="@dimen/default_margin_and_padding"
+        android:paddingRight="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/prrli_read_more_about_pioneers"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontRegular"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+</LinearLayout>

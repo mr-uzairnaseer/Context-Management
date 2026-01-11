@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="360dp">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/cover_photo"
+        android:background="@drawable/bg_ripple_on_light"
+        android:padding="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/image_select_set_cover_photo"
+        android:drawablePadding="34dp"
+        android:drawableStart="@drawable/ic_camera"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/view"
+        android:background="@drawable/bg_ripple_on_light"
+        android:padding="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/image_select_view_photo"
+        android:drawablePadding="34dp"
+        android:drawableStart="@drawable/ic_action_view"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/delete_photo"
+        android:background="@drawable/bg_ripple_on_light"
+        android:padding="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/image_select_remove_photo"
+        android:drawablePadding="34dp"
+        android:drawableStart="@drawable/ic_delete"/>
+</LinearLayout>

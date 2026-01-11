@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.komoot.android.view.RoundedRectanglePageIndicator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onboarding_indicators"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/onboarding_indicator_margin_top"
+    android:layout_centerHorizontal="true"/>

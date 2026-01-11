@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tbb_title_ttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontRegular"/>
+    <View
+        android:id="@+id/tbb_active_indicator_v"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

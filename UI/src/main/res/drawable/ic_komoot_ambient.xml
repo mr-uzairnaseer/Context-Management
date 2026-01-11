@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="36dp"
+    android:width="36dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <path
+        android:fillColor="@color/transparent"
+        android:pathData="M118.322,74.03C126.071,41.82 106.241,9.426 74.03,1.678C41.82,-6.071 9.426,13.759 1.678,45.97C-6.071,78.18 13.759,110.574 45.97,118.322C78.18,126.071 110.574,106.241 118.322,74.03Z"/>
+    <path
+        android:fillColor="@drawable/_ic_komoot_ambient__0_res_0x7f080546"
+        android:pathData="M8.649,59.993C8.649,31.685 31.691,8.643 59.999,8.643C88.323,8.643 111.348,31.685 111.348,59.993C111.348,71.387 107.691,82.138 100.784,91.161L75.033,65.41C75.676,63.65 75.998,61.821 75.998,59.976C75.998,51.155 68.819,43.977 59.999,43.977C51.178,43.977 43.999,51.155 43.999,59.976C43.999,61.821 44.321,63.65 44.965,65.41L19.213,91.161C12.306,82.155 8.649,71.387 8.649,59.993Z"/>
+    <path
+        android:fillColor="@drawable/_ic_komoot_ambient__1_res_0x7f080547"
+        android:pathData="M50.585,72.115L59.999,57.436L69.412,72.098L94.926,97.612C85.394,106.466 73.018,111.342 59.999,111.342C46.979,111.342 34.603,106.466 25.071,97.612L50.585,72.115Z"/>
+</vector>

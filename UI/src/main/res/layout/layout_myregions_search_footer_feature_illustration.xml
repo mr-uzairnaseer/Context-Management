@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/canvas"
+    android:paddingBottom="88dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/msffil_divider2_v"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"/>
+    <View
+        android:id="@+id/msffil_divider_v"
+        android:background="@color/background_green_grey_dark"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/msffil_divider2_v"/>
+    <TextView
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:id="@+id/nrpmil_title"
+        android:paddingTop="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nrpmi_title"
+        android:layout_below="@+id/msffil_divider_v"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/nrpmil_description"
+        android:paddingTop="8dp"
+        android:paddingBottom="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nrpmi_description"
+        android:layout_below="@+id/nrpmil_title"
+        android:fontFamily="?attr/fontRegular"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+    <include
+        android:id="@+id/msffil_illustration_include"
+        layout="@layout/view_myregions_feature_illustration"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="onboarding_indicator_margin_top">50dp</dimen>
+    <dimen name="onboarding_welcome_title_margin_top">64dp</dimen>
+    <dimen name="tsha_highlight_size_width">280dp</dimen>
+</resources>

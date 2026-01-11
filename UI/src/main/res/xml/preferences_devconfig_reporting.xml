@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_dev_settings"
+    android:key="pref_key_app_settings">
+    <SwitchPreference
+        android:persistent="true"
+        android:title="@string/setting_chkbox_log_level_verbose"
+        android:key="pref_key_log_level_verbose"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:persistent="false"
+        android:title="@string/settings_reporting_remote_logging"
+        android:key="pref_key_remote_logging"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:persistent="false"
+        android:title="@string/settings_crashlytics_crash_test"
+        android:key="pref_key_crashlytics"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:persistent="false"
+        android:title="Thread Crash Test"
+        android:key="pref_key_thread_crash_test1"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:persistent="false"
+        android:title="Watchdog Executor Thread Crash Test"
+        android:key="pref_key_thread_crash_test2"
+        app:iconSpaceReserved="false"/>
+</PreferenceScreen>

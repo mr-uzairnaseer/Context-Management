@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nil_large_container_rl"
+    android:background="@color/surface_fill_green_default"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+    <ImageView
+        android:id="@+id/nil_direction_arrow_large_iv"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentStart="false"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/nil_direction_arrow_large_iv">
+        <de.komoot.android.view.AutoFitTextView
+            android:textColor="@color/text_white_default"
+            android:gravity="start"
+            android:id="@+id/nil_header_text_large_ttv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            style="@style/TextAppearance.Komoot.Theme2.Heading01Medium"/>
+        <de.komoot.android.view.AutoFitTextView
+            android:textColor="@color/text_white_default"
+            android:gravity="start"
+            android:id="@+id/nil_sub_text_large_ttv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_and_padding"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawablePadding="6dp"
+            style="@style/TextAppearance.Komoot.Theme2.Label01Medium"/>
+    </LinearLayout>
+</RelativeLayout>

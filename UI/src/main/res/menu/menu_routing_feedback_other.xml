@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_routing_feedback_unnecessary_detour"
+        android:title="@string/routing_feedback_menu_unnecessary_detour"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_routing_feedback_scenery_bad_scenery"
+        android:title="@string/routing_feedback_menu_scenery_not_nice"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_routing_feedback_other"
+        android:title="@string/routing_feedback_menu_other"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+</menu>

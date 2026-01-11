@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/layout_social_add_comment"
+    android:background="@drawable/bg_white_shape_with_grey_effect_states"
+    android:paddingLeft="@dimen/list_item_side_padding"
+    android:paddingRight="@dimen/list_item_side_padding"
+    android:addStatesFromChildren="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="0x7f080f83"
+        android:layout_marginEnd="32dp"
+        app:tint="@color/secondary"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/secondary"
+        android:gravity="center_vertical"
+        android:id="@+id/edittext_compose"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="@string/tour_comment_write_hint"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:fontFamily="?attr/fontRegular"/>
+</LinearLayout>

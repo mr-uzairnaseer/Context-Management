@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_pager_item_user_highlight"
+    android:layout_width="@dimen/profile_large_tile_with"
+    android:layout_height="@dimen/profile_large_tile_height">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/corner_radius_medium"
+        app:contentPadding="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/collection_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="@dimen/corner_radius_medium"/>
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/black_20p"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="@dimen/corner_radius_medium"/>
+            <ImageView
+                android:layout_gravity="start|top"
+                android:id="@+id/collection_drag_icon"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_list_drag"
+                app:tint="@color/white"/>
+            <TextView
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@+id/collection_title"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_large_tile_height"
+                style="@style/TextAppearance.Komoot.Theme2.Heading04Medium"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/btn_borderless_on_light"
+    android:addStatesFromChildren="true"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/ftl_toggle_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/ftl_toggle_follow_button_ttv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="0dp"
+        android:paddingEnd="8dp"/>
+</LinearLayout>

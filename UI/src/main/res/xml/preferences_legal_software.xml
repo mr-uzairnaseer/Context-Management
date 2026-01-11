@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_legal_software_licences"
+    android:key="pref_key_komoot_tp">
+    <Preference
+        android:title="MapLibre GL Native"
+        android:summary="https://github.com/maplibre/maplibre-gl-native \10BSD 2-Clause License"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="greenDAO by greenrobot"
+        android:summary="http://greendao-orm.com/ \10Apache Licence 2.0"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="EventBus by Markus Junginger, greenrobot"
+        android:summary="https://github.com/greenrobot/EventBus/ \10Apache Licence 2.0"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="Picasso by Square, Inc."
+        android:summary="https://github.com/square/picasso \10Apache Licence 2.0"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="OkHttp by Square, Inc."
+        android:summary="https://github.com/square/okhttp \10Apache Licence 2.0"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="Facebook Android SDK"
+        android:summary="https://developers.facebook.com/docs/android"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="Realm by Realm Inc."
+        android:summary="https://github.com/realm/realm-java \10Apache Licence 2.0"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="JTS Topology Suite"
+        android:summary="https://github.com/locationtech/jts \10Eclipse Distribution License 1.0"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="Gson by Google Inc."
+        android:summary="https://code.google.com/p/google-gson/ \10Apache Licence 2.0"
+        app:iconSpaceReserved="false"/>
+</PreferenceScreen>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_group_app_navigation"
+    android:key="pref_key_app_navigation_settings">
+    <SwitchPreference
+        android:persistent="true"
+        android:title="@string/settings_app_navigation_replanning"
+        android:key="pref_key_navigation_auto_replan"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:persistent="true"
+        android:title="@string/setting_chkbox_navigation_logger"
+        android:key="pref_key_touring_logger"
+        android:summary="@string/setting_chkbox_navigation_logger_text"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="@string/settings_button_tts_check"
+        android:key="pref_key_app_tts_check"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="@string/settings_button_tts_install"
+        android:key="pref_key_app_tts_install"
+        app:iconSpaceReserved="false"/>
+</PreferenceScreen>

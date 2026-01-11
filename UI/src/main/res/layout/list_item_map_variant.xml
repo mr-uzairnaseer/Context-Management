@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/list_item_background_states"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/default_margin_and_padding"
+    android:paddingEnd="@dimen/default_margin_and_padding">
+    <ImageView
+        android:id="@+id/map_variant_icon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/checkbox_text_states"
+        android:gravity="center_vertical"
+        android:id="@+id/map_variant_text"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_weight="1"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="12dp"/>
+    <RadioButton
+        android:id="@+id/map_variant_radio_btn"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+</LinearLayout>

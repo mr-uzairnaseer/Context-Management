@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_touring_stats_panel"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pager_top_corner_and_shadow"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/pager_shadow"
+            android:background="@drawable/gradient_vertical_dark_alpha0_dark_alpha30"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:alpha="1"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <View
+            android:background="@drawable/rounded_corner_top_surface_primary_white_default"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <de.komoot.android.view.WrapContentViewPager
+        android:id="@+id/view_pager"
+        android:background="@color/surface_fill_white_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pager_top_corner_and_shadow"
+        android:paddingHorizontal="24dp"/>
+    <de.komoot.android.view.CirclePageIndicator
+        android:id="@+id/circle_indicator"
+        android:background="@color/surface_fill_white_default"
+        android:paddingBottom="24dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_pager"
+        app:fillColor="@color/icon_green_default"
+        app:pageColor="@color/green_600_alpha20"
+        app:radius="4dp"
+        app:space="8dp"
+        app:vpi_strokeWidth="1dp"/>
+</RelativeLayout>

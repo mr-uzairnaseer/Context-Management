@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/feed_item"
+    android:background="@drawable/list_item_background_states"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp">
+    <ViewStub
+        android:id="@+id/title_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="@+id/content_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/list_item_feed_like_comment_bar"/>
+    <include layout="@layout/list_item_feed_save_discover_bar"/>
+    <View
+        android:id="@+id/social_divider"
+        android:background="@color/grey_400"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/social_container"
+        android:background="@color/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/default_margin_and_padding">
+        <ViewStub
+            android:id="@+id/invite_stub"
+            android:layout="@layout/list_item_feed_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include layout="@layout/list_item_feed_social_comments"/>
+    </LinearLayout>
+    <View
+        android:background="@color/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>

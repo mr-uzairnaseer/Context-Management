@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/default_margin_and_padding"
+    android:paddingRight="@dimen/default_margin_and_padding"
+    android:paddingBottom="64dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="24sp"
+        android:textColor="@color/style1_text_primary"
+        android:gravity="center_horizontal"
+        android:id="@+id/textview_no_location_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/inpsire_no_location_title"
+        android:fontFamily="?attr/fontRegular"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/secondary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/textview_button_search"
+        android:background="@drawable/btn_white_states"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/iifnrli_example_place"
+        android:drawableLeft="0x7f080db7"
+        android:drawablePadding="8dp"
+        android:textAllCaps="true"
+        android:drawableStart="0x7f080db7"
+        android:fontFamily="?attr/fontRegular"
+        android:textAlignment="center"/>
+</LinearLayout>

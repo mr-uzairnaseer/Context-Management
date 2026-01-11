@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_dev_settings"
+    android:key="pref_key_app_settings">
+    <SwitchPreference
+        android:persistent="false"
+        android:title="@string/setting_chkbox_location_force_fuse"
+        android:key="user_pref_location_force_fuse"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:persistent="true"
+        android:title="@string/setting_chkbox_tour_upluad"
+        android:key="pref_key_tour_uploader"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:persistent="false"
+        android:title="@string/setting_chkbox_touring_recovery"
+        android:key="user_pref_touring_recovery"
+        app:iconSpaceReserved="false"/>
+</PreferenceScreen>

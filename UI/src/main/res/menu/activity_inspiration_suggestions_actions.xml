@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_save_selector"
+        android:id="@+id/action_save"
+        android:title="@string/collections_like_menue_action"
+        android:checkable="true"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_share_android"
+        android:id="@+id/action_share"
+        android:title="@string/collections_share_menue_action"
+        app:showAsAction="always"/>
+</menu>

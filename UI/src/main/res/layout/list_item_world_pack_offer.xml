@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/tertiary"
+    android:paddingTop="56dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/default_margin_and_padding"
+    android:paddingEnd="@dimen/default_margin_and_padding">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_marginBottom="24dp"
+        android:src="0x7f0810b8"/>
+    <TextView
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:id="@+id/offer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="?attr/fontBold"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:id="@+id/offer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="?attr/fontRegular"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/offer_expires"
+        android:background="@drawable/offer_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:backgroundTint="@color/offer"/>
+</LinearLayout>

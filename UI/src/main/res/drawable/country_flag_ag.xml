@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="15dp"
+    android:width="21dp"
+    android:viewportWidth="21"
+    android:viewportHeight="15">
+    <path
+        android:fillColor="@drawable/_country_flag_ag__0_res_0x7f080049"
+        android:pathData="M0,0h21v15h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M9.5,6.5a1,1.5 0,1 0,2 0a1,1.5 0,1 0,-2 0z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillAlpha="0.5"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_ag__1_res_0x7f08004a"
+        android:pathData="M0,0h21v15h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_ag__2_res_0x7f08004b"
+        android:pathData="M0,0l21,0l-10.5,15z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <group>
+        <clip-path android:pathData="M0,0l21,0l-10.5,15z"/>
+        <path
+            android:fillColor="@drawable/_country_flag_ag__3_res_0x7f08004c"
+            android:pathData="M10.5,8.25l-1.7221,1.9075l0.1311,-2.5665l-2.5665,0.1311l1.9075,-1.7221l-2.25,-2l2.909,0.5l-0.409,-3l2,2.5l2,-2.5l-0.409,3l2.909,-0.5l-2.25,2l1.9075,1.7221l-2.5665,-0.1311l0.1311,2.5665z"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillType="evenOdd"/>
+    </group>
+    <group>
+        <clip-path android:pathData="M0,0l21,0l-10.5,15z"/>
+        <path
+            android:fillColor="@drawable/_country_flag_ag__4_res_0x7f08004d"
+            android:pathData="M0,6h21v4h-21z"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillType="evenOdd"/>
+    </group>
+    <group>
+        <clip-path android:pathData="M0,0l21,0l-10.5,15z"/>
+        <path
+            android:fillColor="@drawable/_country_flag_ag__5_res_0x7f08004e"
+            android:pathData="M0,10h21v5h-21z"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillType="evenOdd"/>
+    </group>
+</vector>

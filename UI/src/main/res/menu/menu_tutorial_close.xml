@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/close_later"
+        android:title="@string/onboarding_dismiss_menu_later"/>
+    <item
+        android:id="@+id/close_never"
+        android:title="@string/onboarding_dismiss_menu_never"/>
+</menu>

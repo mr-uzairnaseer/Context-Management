@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="16sp"
+    android:textColor="@color/primary"
+    android:id="@+id/text"
+    android:background="@drawable/bg_transparent_with_pressable_text_states"
+    android:padding="@dimen/default_margin_and_padding"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="24dp"
+    android:text="@string/map_hook_premium_first_maps_more"
+    android:fontFamily="?attr/fontBold"/>

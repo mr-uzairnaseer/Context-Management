@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_route_edit"
+        android:title="@string/map_touring_action_menu_edit_route"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_action_plan_similar"
+        android:title="@string/map_touring_action_menu_plan_similar"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_replan_to_start"
+        android:title="@string/map_touring_action_menu_replan_to_start"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_reverse_route"
+        android:title="@string/map_touring_action_menu_reverse_route"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_info_weather"
+        android:title="@string/risbv_weather"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_info_waytypes"
+        android:title="@string/map_touring_action_menu_info_waytypes"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_info_surfaces"
+        android:title="@string/map_touring_action_menu_info_surfaces"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_info_elevation"
+        android:title="@string/map_touring_action_menu_info_elevation"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_info_extra_tips"
+        android:title="@string/map_touring_action_menu_info_extra_tips"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_route_delete"
+        android:title="@string/map_touring_action_menu_cancel_route"
+        app:showAsAction="never"/>
+</menu>

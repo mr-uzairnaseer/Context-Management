@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/btn_white_bg_grey_effect_states"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/layout_user_highlight_list_item"/>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <View
+        android:id="@+id/ihli_places_mode_divider_v"
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

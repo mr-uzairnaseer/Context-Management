@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_group_app_offlinemaps"
+    android:key="pref_key_app_offlinemaps_settings">
+    <Preference
+        android:persistent="false"
+        android:enabled="false"
+        android:title="@string/settings_button_select_offline_path_options"
+        android:key="pref_key_app_select_offline_path"
+        app:iconSpaceReserved="false"/>
+    <EditTextPreference
+        android:title="@string/settings_button_offline_maps_path"
+        android:key="pref_key_app_offline_maps_path"
+        android:dialogTitle="@string/settings_omp_dialog_title"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:persistent="false"
+        android:title="@string/settings_offline_path_free_space"
+        android:key="pref_key_app_offline_path_free_space"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:persistent="false"
+        android:title="@string/settings_button_clear_offline_map_path"
+        android:key="pref_key_app_offline_maps_path_clear"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:persistent="false"
+        android:title="@string/settings_button_clear_map_cache"
+        android:key="pref_key_app_clear_map_cache"
+        app:iconSpaceReserved="false"/>
+</PreferenceScreen>

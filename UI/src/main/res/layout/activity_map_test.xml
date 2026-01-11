@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <include layout="@layout/inc_map_new"/>
+        <TextView
+            android:id="@+id/textview_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/layers_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Layers"/>
+        <Button
+            android:id="@+id/button_cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="debug"/>
+        <Button
+            android:id="@+id/button_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop"/>
+        <CheckBox
+            android:id="@+id/checkbox_antialias"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anti alias"/>
+        <CheckBox
+            android:id="@+id/checkbox_layeropacity"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="layer opacity"/>
+    </LinearLayout>
+</LinearLayout>

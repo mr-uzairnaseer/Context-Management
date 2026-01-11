@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/layout_follower_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@color/muted"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tpa_loading_spinner_pb"
+            android:visibility="gone"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/default_margin_and_padding"/>
+        <ListView
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@android:id/list"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/KomootList"/>
+    </LinearLayout>
+    <View
+        android:background="@color/muted"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>

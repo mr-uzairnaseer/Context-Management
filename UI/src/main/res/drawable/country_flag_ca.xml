@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="15dp"
+    android:width="21dp"
+    android:viewportWidth="21"
+    android:viewportHeight="15">
+    <path
+        android:fillColor="@drawable/_country_flag_ca__0_res_0x7f0800e2"
+        android:pathData="M0,0h21v15h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_ca__1_res_0x7f0800e3"
+        android:pathData="M10,0h11v15h-11z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_ca__2_res_0x7f0800e4"
+        android:pathData="M0,0h7v15h-7z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_ca__3_res_0x7f0800e5"
+        android:pathData="M6,0h9v15h-9z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_ca__4_res_0x7f0800e6"
+        android:pathData="M11.6742,7.3258L12.3258,6.6742C12.4215,6.5785 12.5808,6.5808 12.6805,6.6805L13,7L14,6.5L13.5,7.5L13.8195,7.8195C13.9219,7.9219 13.923,8.077 13.8279,8.1721L12.5,9.5L11,9.5L10.75,11L10.25,11L10,9.5L8.5,9.5L7.1721,8.1721C7.0806,8.0806 7.0808,7.9192 7.1805,7.8195L7.5,7.5L7,6.5L8,7L8.3195,6.6805C8.4219,6.5781 8.578,6.578 8.6742,6.6742L9.3258,7.3258C9.4215,7.4215 9.4777,7.3886 9.4502,7.2512L9,5L10,5.5L10.5,4L11,5.5L12,5L11.5498,7.2512C11.5215,7.3926 11.578,7.422 11.6742,7.3258Z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+</vector>

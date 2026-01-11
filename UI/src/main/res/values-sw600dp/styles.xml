@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CallToActionButtonFullWidth" parent="">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_primary</item>
+        <item name="android:layout_width">400dp</item>
+    </style>
+    <style name="CallToActionWidthHolder" parent="">
+        <item name="android:layout_width">320dp</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

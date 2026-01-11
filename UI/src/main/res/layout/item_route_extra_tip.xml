@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/iret_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"/>
+    <de.komoot.android.view.AutoFitTextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/iret_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_weight="1"
+        android:fontFamily="?attr/fontBold"
+        android:layout_marginStart="32dp"
+        app:sizeToFit="true"/>
+    <TextView
+        android:textColor="@color/secondary"
+        android:gravity="center"
+        android:id="@+id/iret_details"
+        android:background="@drawable/btn_borderless_on_light"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="@string/route_information_lagend_details"
+        android:textAllCaps="true"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginEnd="8dp"
+        style="@style/TextAppearance.Komoot.Theme2.Label03Bold"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_action_more_vertical"
+        android:id="@+id/menu_action_open_hidden_menu"
+        android:title="@string/highlight_more_menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_edit_collection"
+                android:title="@string/collections_menue_action_edit"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_upvote_collection"
+                android:title="@string/user_activity_feed_like"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_comment_collection"
+                android:title="@string/user_activity_feed_comment"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_bookmark_collection"
+                android:title="@string/icda_bookmark_button_title"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_plan_multiday"
+                android:title="@string/route_multiday_trip_cta"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_multiday_create_copy"
+                android:title="@string/collections_menue_action_multiday_create_copy"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_share_collection"
+                android:title="@string/collections_share_menue_action"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_delete_collection"
+                android:title="@string/collections_menu_action_delete"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_report_collection"
+                android:title="@string/content_reporting_report_collection"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>

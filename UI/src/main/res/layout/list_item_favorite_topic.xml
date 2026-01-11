@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_favorite_topic_parent"
+    android:layout_width="match_parent"
+    android:layout_height="188dp"
+    android:layout_margin="4dp">
+    <ImageView
+        android:id="@+id/item_favorite_topic_selected_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient_top_transparent_to_bottom_dark_grey_transparent_bottom_raunded"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"/>
+    <FrameLayout
+        android:id="@+id/item_favorite_topic_selected_overlay"
+        android:background="@drawable/primary_50alpha_round_corners"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/item_favorite_topic_like"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_logo_komoot_love_informal"/>
+    <TextView
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="start|bottom"
+        android:id="@+id/item_favorite_topic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/layout_friend_item"
+    android:background="@drawable/list_item_background_states"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_participant_image_view"
+        android:layout_width="@dimen/avatar_46"
+        android:layout_height="@dimen/avatar_46"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="26dp"
+        app:riv_oval="true"/>
+    <de.komoot.android.widget.UsernameTextView
+        android:textSize="19sp"
+        android:typeface="normal"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:maxLines="2"
+        android:layout_weight="1"
+        android:fontFamily="?attr/fontRegular"
+        app:sizeToFit="false"/>
+    <de.komoot.android.view.composition.FollowUnfollowToggleView
+        android:id="@+id/fli_toggle_follow_view_futv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="8dp"/>
+</LinearLayout>

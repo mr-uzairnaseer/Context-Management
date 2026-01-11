@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="0x7f08096f"/>
+        <TextView
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/boa_general_title"
+            android:fontFamily="?attr/fontBold"
+            android:layout_marginStart="@dimen/default_margin_and_padding"
+            android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/bhli_connected_to_title_ttv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/boa_my_devices"
+        android:fontFamily="?attr/fontBold"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+</LinearLayout>

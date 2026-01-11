@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/layout_portrait_navigation_gps_off"
+    android:background="@color/surface_fill_green_default"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:minHeight="96dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="@dimen/default_margin_and_padding">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="0x7f080b98"
+        android:scaleType="centerInside"/>
+    <LinearLayout
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="32dp">
+        <TextView
+            android:textColor="@color/text_white_default"
+            android:gravity="start"
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visual_nav_gps_off_title"
+            android:maxLines="1"
+            android:lines="1"
+            style="@style/TextAppearance.Komoot.Theme2.Heading03Medium"/>
+        <de.komoot.android.view.AutoFitTextView
+            android:textColor="@color/text_white_default"
+            android:gravity="center"
+            android:id="@+id/textview_subline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/visual_nav_gps_off_subtext"
+            android:maxLines="1"
+            android:lines="1"
+            style="@style/TextAppearance.Komoot.Theme2.Label02Medium"/>
+    </LinearLayout>
+</LinearLayout>

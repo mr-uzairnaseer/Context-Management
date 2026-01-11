@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="highlight_photo_contribution_recyclerview_height">300dp</dimen>
+    <dimen name="tsha_highlight_size_height">360dp</dimen>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_pressable_text_states"
+    android:addStatesFromChildren="true"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <CheckBox
+        android:id="@+id/mItemSelectedTCB"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:checked="true"
+        android:layout_marginStart="12dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:id="@+id/mTextViewItemName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+</LinearLayout>

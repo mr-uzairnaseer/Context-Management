@@ -1,0 +1,816 @@
+{
+  "wt#alpine_hiking_path": {
+    "caption": "Alpinwanderweg",
+    "sumKey": "wt#alpine_hiking_path",
+    "order": 10,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d9": {
+    "caption": "Alpinwanderweg (SAC T6)",
+    "sumKey": "wt#alpine_hiking_path",
+    "order": 11,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d8": {
+    "caption": "Alpinwanderweg (SAC T5)",
+    "sumKey": "wt#alpine_hiking_path",
+    "order": 12,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d7": {
+    "caption": "Alpinwanderweg (SAC T4)",
+    "sumKey": "wt#alpine_hiking_path",
+    "order": 13,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#alpine_bike": {
+    "caption": "Alpiner Weg",
+    "sumKey": "wt#alpine_bike",
+    "order": 20,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#alpine_bike_d9": {
+    "caption": "Alpiner Weg (SAC T6)",
+    "sumKey": "wt#alpine_bike",
+    "order": 21,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#alpine_bike_d8": {
+    "caption": "Alpiner Weg (SAC T5)",
+    "sumKey": "wt#alpine_bike",
+    "order": 22,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "wt#mountain_hiking_path": {
+    "caption": "Bergwanderweg",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 30,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d6": {
+    "caption": "Bergwanderweg (SAC T3)",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 31,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d5": {
+    "caption": "Bergwanderweg (SAC T2)",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 32,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d4": {
+    "caption": "Bergwanderweg (SAC T2)",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 33,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d3": {
+    "caption": "Bergwanderweg (SAC T2)",
+    "sumKey": "wt#mountain_hiking_path",
+    "order": 34,
+    "color": {
+      "rgb": "CAC1B2",
+      "opacity": 1
+    }
+  },
+  "wt#trail": {
+    "caption": "Singletrail",
+    "sumKey": "wt#trail",
+    "order": 40,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d7": {
+    "caption": "Singletrail (S5)",
+    "sumKey": "wt#trail",
+    "order": 41,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d6": {
+    "caption": "Singletrail (S4)",
+    "sumKey": "wt#trail",
+    "order": 42,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d5": {
+    "caption": "Singletrail (S3)",
+    "sumKey": "wt#trail",
+    "order": 43,
+    "color": {
+      "rgb": "7E8F84",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d4": {
+    "caption": "Singletrail (S2)",
+    "sumKey": "wt#trail",
+    "order": 44,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d3": {
+    "caption": "Singletrail (S2)",
+    "sumKey": "wt#trail",
+    "order": 45,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d2": {
+    "caption": "Singletrail (S1)",
+    "sumKey": "wt#trail",
+    "order": 46,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#trail_d1": {
+    "caption": "Singletrail (S0)",
+    "sumKey": "wt#trail",
+    "order": 47,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#hiking_path": {
+    "caption": "Wanderweg",
+    "sumKey": "wt#hiking_path",
+    "order": 50,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#hike_d2": {
+    "caption": "Wanderweg (SAC T1)",
+    "sumKey": "wt#hiking_path",
+    "order": 51,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#long_hiking_path": {
+    "caption": "Fernwanderweg",
+    "sumKey": "wt#hiking_path",
+    "order": 52,
+    "color": {
+      "rgb": "AE9067",
+      "opacity": 1
+    }
+  },
+  "wt#way": {
+    "caption": "Weg",
+    "sumKey": "wt#way",
+    "order": 60,
+    "color": {
+      "rgb": "CAD0D7",
+      "opacity": 1
+    }
+  },
+  "wt#track": {
+    "caption": "Feldweg",
+    "sumKey": "wt#track",
+    "order": 61,
+    "color": {
+      "rgb": "CAD0D7",
+      "opacity": 1
+    }
+  },
+  "wt#footway": {
+    "caption": "Fußweg",
+    "sumKey": "wt#footway",
+    "order": 62,
+    "color": {
+      "rgb": "CAD0D7",
+      "opacity": 1
+    }
+  },
+  "wt#cycleway": {
+    "caption": "Fahrradweg",
+    "sumKey": "wt#cycleway",
+    "order": 70,
+    "color": {
+      "rgb": "65AAA2",
+      "opacity": 1
+    }
+  },
+  "wt#cycle_route": {
+    "caption": "Radfernweg",
+    "sumKey": "wt#cycleway",
+    "order": 71,
+    "color": {
+      "rgb": "65AAA2",
+      "opacity": 1
+    }
+  },
+  "wt#minor_road": {
+    "caption": "Nebenstraße",
+    "sumKey": "wt#minor_road",
+    "order": 80,
+    "color": {
+      "rgb": "BAC2C8",
+      "opacity": 1
+    }
+  },
+  "wt#street": {
+    "caption": "Straße",
+    "sumKey": "wt#street",
+    "order": 90,
+    "color": {
+      "rgb": "A4ACB7",
+      "opacity": 1
+    }
+  },
+  "wt#primary": {
+    "caption": "Bundesstraße",
+    "sumKey": "wt#primary",
+    "order": 100,
+    "color": {
+      "rgb": "E7C363",
+      "opacity": 1
+    }
+  },
+  "wt#ferry": {
+    "caption": "Fähre",
+    "sumKey": "wt#ferry",
+    "order": 110,
+    "color": {
+      "rgb": "6FC5EB",
+      "opacity": 1
+    }
+  },
+  "wt#service": {
+    "caption": "Zufahrtsweg",
+    "sumKey": "wt#way",
+    "order": 63,
+    "color": {
+      "rgb": "CAD0D7",
+      "opacity": 1
+    }
+  },
+  "wt#off_grid": {
+    "caption": "Off-Grid-Abschnitt",
+    "sumKey": "wt#off_grid",
+    "order": 200,
+    "color": {
+      "rgb": "D0A5D1",
+      "opacity": 1
+    }
+  },
+  "wt#unknown": {
+    "caption": "Unbekannt",
+    "sumKey": "wt#unknown",
+    "order": 999,
+    "color": {
+      "rgb": "000000",
+      "opacity": 1
+    }
+  },
+  "sb#asphalt": {
+    "caption": "Asphalt",
+    "sumKey": "sb#asphalt",
+    "order": 60,
+    "color": {
+      "rgb": "8A939E",
+      "opacity": 1
+    }
+  },
+  "sb#concrete": {
+    "caption": "Beton",
+    "sumKey": "sb#paved",
+    "order": 51,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sb#paved": {
+    "caption": "Straßenbelag",
+    "sumKey": "sb#paved",
+    "order": 50,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sb#paving_stones": {
+    "caption": "Pflastersteine",
+    "sumKey": "sb#cobbles",
+    "order": 42,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sb#cobblestone": {
+    "caption": "Kopfsteinpflaster",
+    "sumKey": "sb#cobbles",
+    "order": 41,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sb#cobbles": {
+    "caption": "Pflaster",
+    "sumKey": "sb#cobbles",
+    "order": 40,
+    "color": {
+      "rgb": "8A8680",
+      "opacity": 1
+    }
+  },
+  "sb#compacted": {
+    "caption": "Fester Kies",
+    "sumKey": "sb#compacted",
+    "order": 30,
+    "color": {
+      "rgb": "C4BEB4",
+      "opacity": 1
+    }
+  },
+  "sb#gravel": {
+    "caption": "Kies",
+    "sumKey": "sb#unpaved",
+    "order": 26,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#grass_paver": {
+    "caption": "Rasengittersteine",
+    "sumKey": "sb#unpaved",
+    "order": 25,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#wood": {
+    "caption": "Holz",
+    "sumKey": "sb#unpaved",
+    "order": 24,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#sand": {
+    "caption": "Sand",
+    "sumKey": "sb#unpaved",
+    "order": 23,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#ground": {
+    "caption": "Erde",
+    "sumKey": "sb#unpaved",
+    "order": 22,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#stone": {
+    "caption": "Stein",
+    "sumKey": "sb#unpaved",
+    "order": 21,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#unpaved": {
+    "caption": "Loser Untergrund",
+    "sumKey": "sb#unpaved",
+    "order": 20,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sb#alpin": {
+    "caption": "Alpines Gelände",
+    "sumKey": "sb#alpin",
+    "order": 10,
+    "color": {
+      "rgb": "A7AE8F",
+      "opacity": 1
+    }
+  },
+  "sb#unknown": {
+    "caption": "Unbekannt",
+    "sumKey": "sb#unknown",
+    "order": 999,
+    "color": {
+      "rgb": "000000",
+      "opacity": 1
+    }
+  },
+  "sf#asphalt": {
+    "caption": "Asphalt",
+    "sumKey": "sf#asphalt",
+    "order": 60,
+    "color": {
+      "rgb": "8A939E",
+      "opacity": 1
+    }
+  },
+  "sf#concrete": {
+    "caption": "Beton",
+    "sumKey": "sf#paved",
+    "order": 53,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sf#cobblestone": {
+    "caption": "Kopfsteinpflaster",
+    "sumKey": "sf#paved",
+    "order": 52,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sf#paving_stones": {
+    "caption": "Pflastersteine",
+    "sumKey": "sf#paved",
+    "order": 51,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sf#paved": {
+    "caption": "Straßenbelag",
+    "sumKey": "sf#paved",
+    "order": 50,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sf#compacted": {
+    "caption": "Fester Kies",
+    "sumKey": "sf#gravel",
+    "order": 41,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sf#gravel": {
+    "caption": "Kies",
+    "sumKey": "sf#gravel",
+    "order": 40,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sf#grass_paver": {
+    "caption": "Rasengittersteine",
+    "sumKey": "sf#unpaved",
+    "order": 32,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sf#wood": {
+    "caption": "Holz",
+    "sumKey": "sf#unpaved",
+    "order": 31,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sf#unpaved": {
+    "caption": "Loser Untergrund",
+    "sumKey": "sf#unpaved",
+    "order": 30,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sf#sand": {
+    "caption": "Sand",
+    "sumKey": "sf#nature",
+    "order": 23,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sf#ground": {
+    "caption": "Erde",
+    "sumKey": "sf#nature",
+    "order": 22,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sf#stone": {
+    "caption": "Stein",
+    "sumKey": "sf#nature",
+    "order": 21,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sf#nature": {
+    "caption": "Naturbelassen",
+    "sumKey": "sf#nature",
+    "order": 20,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sf#alpin": {
+    "caption": "Alpines Gelände",
+    "sumKey": "sf#alpin",
+    "order": 10,
+    "color": {
+      "rgb": "B3B99D",
+      "opacity": 1
+    }
+  },
+  "sf#unknown": {
+    "caption": "Unbekannt",
+    "sumKey": "sf#unknown",
+    "order": 999,
+    "color": {
+      "rgb": "000000",
+      "opacity": 1
+    }
+  },
+  "sm#asphalt": {
+    "caption": "Asphalt",
+    "sumKey": "sm#asphalt",
+    "order": 60,
+    "color": {
+      "rgb": "8A939E",
+      "opacity": 1
+    }
+  },
+  "sm#concrete": {
+    "caption": "Beton",
+    "sumKey": "sm#paved",
+    "order": 53,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sm#cobblestone": {
+    "caption": "Kopfsteinpflaster",
+    "sumKey": "sm#paved",
+    "order": 52,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sm#paving_stones": {
+    "caption": "Pflastersteine",
+    "sumKey": "sm#paved",
+    "order": 51,
+    "color": {
+      "rgb": "8B857B",
+      "opacity": 1
+    }
+  },
+  "sm#paved": {
+    "caption": "Straßenbelag",
+    "sumKey": "sm#paved",
+    "order": 50,
+    "color": {
+      "rgb": "D7D7D7",
+      "opacity": 1
+    }
+  },
+  "sm#compacted": {
+    "caption": "Fester Kies",
+    "sumKey": "sm#gravel",
+    "order": 41,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sm#gravel": {
+    "caption": "Kies",
+    "sumKey": "sm#gravel",
+    "order": 40,
+    "color": {
+      "rgb": "CAC2B2",
+      "opacity": 1
+    }
+  },
+  "sm#grass_paver": {
+    "caption": "Rasengittersteine",
+    "sumKey": "sm#unpaved",
+    "order": 32,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sm#wood": {
+    "caption": "Holz",
+    "sumKey": "sm#unpaved",
+    "order": 31,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sm#unpaved": {
+    "caption": "Loser Untergrund",
+    "sumKey": "sm#unpaved",
+    "order": 30,
+    "color": {
+      "rgb": "A89070",
+      "opacity": 1
+    }
+  },
+  "sm#sand": {
+    "caption": "Sand",
+    "sumKey": "sm#nature",
+    "order": 23,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sm#ground": {
+    "caption": "Erde",
+    "sumKey": "sm#nature",
+    "order": 22,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sm#stone": {
+    "caption": "Stein",
+    "sumKey": "sm#nature",
+    "order": 21,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sm#nature": {
+    "caption": "Naturbelassen",
+    "sumKey": "sm#nature",
+    "order": 20,
+    "color": {
+      "rgb": "BB915E",
+      "opacity": 1
+    }
+  },
+  "sm#alpin": {
+    "caption": "Alpines Gelände",
+    "sumKey": "sm#alpin",
+    "order": 10,
+    "color": {
+      "rgb": "B3B99D",
+      "opacity": 1
+    }
+  },
+  "sm#unknown": {
+    "caption": "Unbekannt",
+    "sumKey": "sm#unknown",
+    "order": 999,
+    "color": {
+      "rgb": "000000",
+      "opacity": 1
+    }
+  },
+  "info!forbidden": {
+    "caption": "Achtung, der Zugang hier ist eingeschränkt oder verboten.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!law_dismount": {
+    "caption": "Fahrradfahrer müssen hier absteigen.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!carry": {
+    "caption": "Du musst dein Fahrrad hier warscheinlich tragen.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!critical": {
+    "caption": "Vorsicht, dieses Teilstück ist kaum geeignet.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!warning3": {
+    "caption": "Dieses Teilstück ist nicht ideal.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!warning2": {
+    "caption": "Dieses Teilstück ist nicht ideal.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "info!warning1": {
+    "caption": "Dieses Teilstück ist nicht ideal.",
+    "color": {
+      "rgb": "ffaacc",
+      "opacity": 1
+    }
+  },
+  "d#c1": "Für alle Fitnesslevel.",
+  "d#c2": "Gute Grundkondition erforderlich.",
+  "d#c3": "Sehr gute Kondition erforderlich.",
+  "db#t1": "Überwiegend befestigte Wege. Kein besonderes Können erforderlich.",
+  "db#t2": "Die Tour kann Passagen mit losem Untergrund enthalten, die schwer zu befahren sind.",
+  "db#t3": "Auf einigen Passagen wirst du dein Rad evtl. tragen müssen.",
+  "dm#t1": "Technische Grundkenntnisse genügen.",
+  "dm#t2": "Fortgeschrittene Fahrtechnik nötig.",
+  "dm#t3": "Fortgeschrittene Fahrtechnik notwendig. Auf einigen Passagen wirst du dein Rad evtl. tragen müssen.",
+  "dh#t1": "Leicht begehbare Wege. Kein besonderes Können erforderlich. ",
+  "dh#t2": "Überwiegend gut begehbare Wege. Trittsicherheit erforderlich.",
+  "dh#t3": "Gute Trittsicherheit, festes Schuhwerk und alpine Erfahrung notwendig.",
+  "dr#t1": "Überwiegend gute Straßenbeläge. Einfach zu fahren.",
+  "dr#t2": "Die Tour kann Passagen mit losem Untergrund enthalten, die schwer zu befahren sind.",
+  "dr#t3": "Auf einigen Passagen wirst du dein Rad evtl. tragen müssen.",
+  "dj#t1": "Überwiegend befestigte Wege. Kein besonderes Können erforderlich.",
+  "dj#t2": "Überwiegend gut begehbare Wege. Etwas Trittsicherheit erforderlich.",
+  "dj#t3": "Gute Trittsicherheit, festes Schuhwerk und alpine Erfahrung notwendig."
+}

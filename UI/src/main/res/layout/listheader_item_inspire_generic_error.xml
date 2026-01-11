@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/default_margin_and_padding"
+    android:paddingRight="@dimen/default_margin_and_padding"
+    android:paddingBottom="64dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="24sp"
+        android:textColor="@color/style1_text_primary"
+        android:gravity="center_horizontal"
+        android:id="@+id/textview_error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/discover_load_error"
+        android:fontFamily="?attr/fontRegular"/>
+    <Button
+        android:textSize="16sp"
+        android:textColor="@color/secondary"
+        android:id="@+id/textview_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/aif_try_again_action"
+        android:fontFamily="?attr/fontRegular"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+</LinearLayout>

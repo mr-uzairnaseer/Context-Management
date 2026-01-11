@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_import_file"
+        android:title="@string/action_bar_icon_import_file"/>
+    <item
+        android:id="@+id/action_import_garmin"
+        android:title="@string/action_bar_icon_import_garmin"/>
+    <item
+        android:id="@+id/action_import_wahoo"
+        android:title="@string/action_bar_icon_import_wahoo"/>
+</menu>

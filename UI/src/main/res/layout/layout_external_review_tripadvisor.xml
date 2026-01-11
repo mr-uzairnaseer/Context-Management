@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_pressable_text_states"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/default_margin_and_padding"
+    android:paddingEnd="@dimen/default_margin_and_padding">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/ery_name_ttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_info_reviews_provider_tripadvisor"
+        android:fontFamily="?attr/fontBold"
+        android:layout_alignParentStart="true"/>
+    <ImageView
+        android:id="@+id/ery_rating_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitStart"
+        android:layout_below="@+id/ery_name_ttv"
+        android:layout_toStartOf="@+id/ery_rating_count_tv"
+        android:layout_alignStart="@+id/ery_name_ttv"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:id="@+id/ery_rating_tv"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/ery_name_ttv"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_toStartOf="@+id/ery_rating_count_tv"
+        android:layout_alignStart="@+id/ery_name_ttv"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/text_underline"
+        android:id="@+id/ery_rating_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 Reviews"
+        android:layout_alignBaseline="@+id/ery_rating_tv"
+        android:layout_alignTop="@+id/ery_rating_iv"
+        android:layout_alignParentRight="true"
+        android:fontFamily="?attr/fontRegular"/>
+</RelativeLayout>

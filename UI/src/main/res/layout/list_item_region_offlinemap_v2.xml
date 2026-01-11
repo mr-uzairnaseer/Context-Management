@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/layout_list_item_region_offlinemap"
+    android:background="@drawable/list_item_background_states"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:paddingStart="@dimen/std_border_left"
+    android:paddingEnd="@dimen/std_border_right">
+    <ImageView
+        android:id="@+id/imageview_icon"
+        android:visibility="visible"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_offline_pin"
+        android:scaleType="centerInside"
+        app:tint="@color/main_grey"/>
+    <ProgressBar
+        android:id="@+id/progressbar_downloading"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:indeterminate="true"/>
+    <de.komoot.android.view.AutoFitTextView
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:id="@+id/textview_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_weight="1"
+        android:fontFamily="?attr/fontBold"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="0dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:gravity="end"
+        android:id="@+id/textview_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:fontFamily="?attr/fontBold"/>
+</LinearLayout>

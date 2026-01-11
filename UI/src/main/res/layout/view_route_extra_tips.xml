@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="@style/TextAppearance.Komoot.Theme2.Heading04Medium"
+        android:gravity="start|bottom"
+        android:id="@+id/layout_extra_tips_title"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/route_information_extra_tips"
+        android:paddingStart="@dimen/std_border_left"
+        android:paddingEnd="@dimen/std_border_left"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_extra_tips_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

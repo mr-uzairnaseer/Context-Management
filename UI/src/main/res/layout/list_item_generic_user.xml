@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/root_layout"
+    android:background="@drawable/list_item_background_states"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_participant_image_view"
+        android:layout_width="@dimen/avatar_46"
+        android:layout_height="@dimen/avatar_46"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="26dp"
+        app:riv_oval="true"/>
+    <de.komoot.android.widget.UsernameTextView
+        android:textSize="19sp"
+        android:typeface="normal"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:id="@+id/textview_user_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:fontFamily="?attr/fontRegular"/>
+</LinearLayout>

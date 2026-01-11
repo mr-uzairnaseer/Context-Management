@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <de.komoot.android.widget.KmtRecyclerView
+            android:id="@+id/recyclerview"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ViewStub
+            android:id="@+id/map_stub"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/map_placeholder_height"/>
+        <View
+            android:id="@+id/view_statusbar_underlay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <include
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/inc_sponsored_collection_actions"/>
+        <RelativeLayout
+            android:id="@+id/component_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

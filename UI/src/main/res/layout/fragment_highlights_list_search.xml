@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/canvas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.komoot.android.widget.NotifyingListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textview_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/highlights_list_search_no_results"
+        android:drawableTop="@drawable/ic_emptystate_search"
+        android:drawablePadding="30dp"
+        android:fontFamily="?attr/fontRegular"/>
+</RelativeLayout>

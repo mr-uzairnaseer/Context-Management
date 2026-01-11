@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/btn_white_c8_grey_border_ripple"
+        android:state_activated="false"/>
+    <item android:drawable="@drawable/btn_white_c8_hero_green_border_ripple"/>
+</selector>

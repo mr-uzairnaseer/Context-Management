@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_divider_short_item"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/divider_height">
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginStart="72dp"/>
+</RelativeLayout>

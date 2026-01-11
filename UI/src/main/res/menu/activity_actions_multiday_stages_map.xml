@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_routing_reverse"
+        android:title="@string/multiday_stages_map_menue_reverse"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_change_days"
+        android:title="@string/multiday_stages_map_menu_adjust"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_save_finish"
+        android:title="@string/multiday_stages_map_menu_save_finish"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="280dp">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:text="@string/premium_buy_insurance_coverage_dialog_title"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:id="@+id/countries"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Albanien\10Andorra\10Belgien\10Bosnien-Herzegowina\10Bulgarien\10Cyprus\10Dänemark\10Deutschland\10Estland\10Finnland\10Frankreich\10Griechenland\10Großbritannien\10Ireland\10Italien\10Kanada\10Kroatien\10Lettland\10Liechtenstein\10Litauen\10Luxemburg\10Malta\10Mazedonien\10Moldawien\10Monaco\10Montenegro\10Niederlande\10Norwegen\10Österreich\10Polen\10Portugal\10Rumänien\10San Marino\10Schweden\10Schweiz\10Serbien\10Slowakei\10Slowenien\10Spanien\10Tschechische Republik\10Ungarn\10USA"
+        android:layout_weight="1"
+        android:fontFamily="?attr/fontRegular"
+        android:paddingStart="24dp"
+        android:paddingEnd="12dp"
+        android:lineHeight="48dp"/>
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/text_blue_states"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:id="@+id/btn_ok"
+        android:background="@drawable/bg_white_blue_ripple_states"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/premium_buy_insurance_coverage_dialog_btn"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontRegular"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginEnd="8dp"/>
+</LinearLayout>

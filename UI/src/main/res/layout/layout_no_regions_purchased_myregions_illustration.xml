@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myregions_no_regions_purchased_illustration_container"
+    android:paddingBottom="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:id="@+id/nrpmil_title"
+        android:background="@color/primary"
+        android:paddingTop="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nrpmi_title"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:id="@+id/nrpmil_description"
+        android:background="@color/primary"
+        android:paddingTop="8dp"
+        android:paddingBottom="@dimen/default_margin_and_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nrpmi_description"
+        android:layout_below="@+id/nrpmil_title"
+        android:fontFamily="?attr/fontRegular"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+    <View
+        android:background="@drawable/bg_half_hero_green_triangle"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_below="@+id/nrpmil_description"/>
+    <include layout="@layout/view_myregions_feature_illustration"/>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_routing_feedback_traffic"
+        android:title="@string/routing_feedback_menu_danger_traffic"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_routing_feedback_technical_demanding"
+        android:title="@string/routing_feedback_menu_danger_demanding"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_routing_feedback_exposed"
+        android:title="@string/routing_feedback_menu_danger_exposed"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_routing_feedback_danger_animals"
+        android:title="@string/routing_feedback_menu_danger_animals"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_routing_feedback_other"
+        android:title="@string/routing_feedback_menu_other"
+        app:actionViewClass="android.widget.TextView"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/page_item_photo"
+    android:paddingBottom="8dp"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/tour_photo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"/>
+    <de.komoot.android.view.AutoFitTextView
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/create_hl_from_photo"
+        android:background="@drawable/btn_primary"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/hl_create_hl_from_photo_cta"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontRegular"
+        android:elevation="3dp"/>
+</LinearLayout>

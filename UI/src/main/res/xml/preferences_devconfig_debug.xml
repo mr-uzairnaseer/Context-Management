@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_dev_settings"
+    android:key="pref_key_app_settings">
+    <SwitchPreference
+        android:persistent="false"
+        android:title="@string/settings_dev_logcat_upload"
+        android:key="user_pref_logcat_upload"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:persistent="false"
+        android:title="@string/setting_switch_debug_picasso"
+        android:key="user_pref_debug_picasso"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:persistent="false"
+        android:title="@string/setting_switch_debug_gcm"
+        android:key="user_pref_debug_fcm"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:persistent="false"
+        android:title="Copy FCM Token to clipboard ��"
+        android:key="user_pref_debug_copy_fcm"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:persistent="false"
+        android:title="@string/setting_switch_debug_ble"
+        android:key="user_pref_debug_ble"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:persistent="false"
+        android:title="@string/setting_switch_debug_data"
+        android:key="user_pref_key_debug_data"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:persistent="false"
+        android:title="@string/setting_switch_debug_pioneer_override"
+        android:key="user_pref_key_pioneer_state_override"
+        android:defaultValue="@bool/config_feature_default_pioneer_override"
+        app:iconSpaceReserved="false"/>
+    <ListPreference
+        android:persistent="false"
+        android:title="@string/setting_feature_compass_title"
+        android:key="pref_key_compass_sensor"
+        android:dialogTitle="@string/setting_feature_compass_dialog_title"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:persistent="false"
+        android:title="Address"
+        android:key="pref_address"
+        app:iconSpaceReserved="false"/>
+    <PreferenceCategory
+        android:title="Internal states"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:persistent="false"
+            android:title="Tour Upload Tasks"
+            android:key="pref_key_tour_upload_tasks"
+            android:summary=""
+            app:iconSpaceReserved="false"/>
+        <Preference
+            android:persistent="false"
+            android:title="Recorder Storage"
+            android:key="pref_key_recorder_storage"
+            android:summary=""
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

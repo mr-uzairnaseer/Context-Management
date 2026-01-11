@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="highlight_photo_contribution_recyclerview_height">200dp</dimen>
+    <dimen name="screen_favorite_sport_vertical_margin1">20dp</dimen>
+    <dimen name="tsha_highlight_create_marginTop">272dp</dimen>
+    <dimen name="tsha_highlight_size_height">240dp</dimen>
+</resources>

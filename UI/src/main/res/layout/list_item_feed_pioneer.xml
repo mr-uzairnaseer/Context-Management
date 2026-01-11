@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_list_item_pioneer"
+    android:paddingTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_background_sport_region"
+        android:background="@drawable/background_achievement_pioneer_item_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/layout_pioneer_icon"
+            android:background="0x7f081078"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/golden_medium"
+            android:gravity="center_horizontal"
+            android:id="@+id/textview_pioneer_for_sport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/user_info_feed_pioneer_for_sport"
+            android:fontFamily="?attr/fontBold"/>
+        <TextView
+            android:textSize="28sp"
+            android:textColor="@color/golden_light"
+            android:gravity="center_horizontal"
+            android:id="@+id/textview_pioneer_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:fontFamily="?attr/fontBold"/>
+    </LinearLayout>
+    <de.komoot.android.view.CompatLottieAnimationView
+        android:layout_gravity="center"
+        android:id="@+id/like_animation"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"/>
+</FrameLayout>

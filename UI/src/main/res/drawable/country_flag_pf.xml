@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="15dp"
+    android:width="21dp"
+    android:viewportWidth="21"
+    android:viewportHeight="15">
+    <path
+        android:fillColor="@drawable/_country_flag_pf__0_res_0x7f08039a"
+        android:pathData="M0,0h21v15h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_pf__1_res_0x7f08039b"
+        android:pathData="M0,0h21v4h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_pf__2_res_0x7f08039c"
+        android:pathData="M0,11h21v4h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_country_flag_pf__3_res_0x7f08039d"
+        android:pathData="M0,4h21v7h-21z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <group>
+        <clip-path android:pathData="M10.5,7.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+        <path
+            android:fillColor="@drawable/_country_flag_pf__4_res_0x7f08039e"
+            android:pathData="M8,5h5v2.5h-5z"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillType="evenOdd"/>
+    </group>
+    <group>
+        <clip-path android:pathData="M10.5,7.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+        <path
+            android:fillColor="#ffffff"
+            android:pathData="M9,6.5l3,0l-0.5,1l-2,0z"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillType="evenOdd"/>
+    </group>
+    <group>
+        <clip-path android:pathData="M10.5,7.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+        <path
+            android:fillColor="@drawable/_country_flag_pf__5_res_0x7f08039f"
+            android:pathData="M10,5L11,5L11,6.4953C11,6.774 10.7681,7 10.5,7C10.2239,7 10,6.786 10,6.4953L10,5ZM9,6C9,6 9.75,7.5 10.5,7.5C11.25,7.5 12,6 12,6L12,7C12,7.5523 11.5573,8 11.001,8L9.999,8C9.4472,8 9,7.5561 9,7L9,6Z"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillType="evenOdd"/>
+    </group>
+    <group>
+        <clip-path android:pathData="M10.5,7.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+        <path
+            android:fillColor="@drawable/_country_flag_pf__6_res_0x7f0803a0"
+            android:pathData="M8,8h5v2h-5z"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillType="evenOdd"/>
+    </group>
+    <group>
+        <clip-path android:pathData="M10.5,7.5m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+        <path
+            android:fillColor="#ffffff"
+            android:pathData="M8,8.5l5,0l0,0.5l-5,0z"
+            android:strokeColor="#00000000"
+            android:strokeWidth="1"
+            android:fillType="evenOdd"/>
+    </group>
+</vector>

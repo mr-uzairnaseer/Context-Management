@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        layout="@layout/inc_map_new"/>
+    <ImageView
+        android:id="@+id/live_tracking_line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/lt_graphic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/live_tracking_pin"
+        android:background="@drawable/white_pin"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/white_pin"
+        android:rotation="45"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/live_tracking_avatar"
+        android:visibility="gone"
+        android:layout_width="@dimen/avatar_46"
+        android:layout_height="@dimen/avatar_46"
+        android:layout_marginTop="4dp"
+        android:elevation="7dp"
+        android:outlineProvider="none"
+        app:layout_constraintEnd_toEndOf="@+id/live_tracking_pin"
+        app:layout_constraintStart_toStartOf="@+id/live_tracking_pin"
+        app:layout_constraintTop_toTopOf="@+id/live_tracking_pin"/>
+</merge>

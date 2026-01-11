@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.komoot.android.view.NonSwipeAbleViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewpager_track_infos"
+    android:background="@color/surface_fill_primary_default"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/planning_route_track_info_pager_item_height"/>

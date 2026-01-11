@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layout_list_item_search_suggestion_regions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/text_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_and_padding"
+        android:layout_marginRight="@dimen/default_margin_and_padding"
+        android:layout_marginBottom="-48dp"
+        android:text="@string/ssrli_title"
+        android:layout_above="@+id/ssrli_recylcerview"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontLight"
+        android:layout_alignParentEnd="false"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ssrli_recylcerview"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="@dimen/default_margin_and_padding"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+</RelativeLayout>

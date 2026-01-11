@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/my_regions_v2_header_cp_container"
+    android:background="@color/tertiary"
+    android:paddingTop="@dimen/default_margin_and_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/default_margin_and_padding"
+    android:paddingEnd="@dimen/default_margin_and_padding">
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myregion_complete_package_header_unlocked_title"
+        style="@style/TextAppearance.Komoot.Theme2.Heading03Medium"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/myregion_complete_package_header_unlocked_subtitle"
+        android:fontFamily="?attr/fontRegular"/>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="0x7f081070"/>
+</LinearLayout>

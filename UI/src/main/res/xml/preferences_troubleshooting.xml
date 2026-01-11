@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_button_app_settings"
+    android:key="pref_key_app_settings">
+    <ListPreference
+        android:persistent="false"
+        android:title="@string/setting_feature_compass_title"
+        android:key="pref_key_compass_sensor"
+        android:dialogTitle="@string/setting_feature_compass_dialog_title"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:persistent="false"
+        android:title="@string/setting_chkbox_location_force_fuse"
+        android:key="user_pref_location_force_fuse"
+        app:iconSpaceReserved="false"/>
+</PreferenceScreen>

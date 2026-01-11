@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/list_item_ble_device_container"
+    android:background="@drawable/bg_pressable_text_states"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <de.komoot.android.view.AutoFitTextView
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:id="@+id/mDeviceNameTATV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:lines="1"
+        android:fontFamily="?attr/fontRegular"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"
+        android:layout_toStartOf="@+id/mRegisteredHookIV"
+        android:layout_alignParentStart="true"/>
+    <ImageView
+        android:id="@+id/mRegisteredHookIV"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_check"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"
+        android:layout_alignParentEnd="true"
+        app:tint="@color/secondary"/>
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

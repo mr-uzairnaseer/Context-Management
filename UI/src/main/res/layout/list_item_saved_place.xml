@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/spli_layout_container_ll"
+    android:background="@drawable/btn_white_bg_grey_effect_states"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/layout_user_highlight_list_item"/>
+    <TextView
+        android:textColor="@color/secondary"
+        android:gravity="center_vertical"
+        android:id="@+id/spli_add_to_tour_button_ttv"
+        android:background="@drawable/bg_pressable_text_states"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/spli_add_to_tour"
+        android:textAllCaps="true"
+        android:paddingStart="72dp"
+        android:paddingEnd="0dp"/>
+    <include
+        android:id="@+id/ihli_places_mode_divider_v"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        layout="@layout/divider_item"/>
+</LinearLayout>

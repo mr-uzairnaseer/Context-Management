@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/fvpv_image_iv"
+        android:background="@drawable/rounded_corner_12dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/placeholder_highlight"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:clipToOutline="true"/>
+    <ImageView
+        android:id="@+id/fvpv_play_ib"
+        android:background="@color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="0x7f080cf8"
+        android:layout_centerInParent="true"/>
+    <View
+        android:background="@drawable/bg_ripple_on_dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/fvpv_image_iv"
+        android:layout_alignBottom="@+id/fvpv_image_iv"/>
+</RelativeLayout>

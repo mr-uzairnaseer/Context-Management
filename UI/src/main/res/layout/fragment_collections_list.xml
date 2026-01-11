@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/canvas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/empty_collections_list_compose_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <de.komoot.android.widget.KmtRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

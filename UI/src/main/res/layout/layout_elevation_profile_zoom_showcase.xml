@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/btn_map_overlay_transparent_dark_states"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:id="@+id/sc_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ep_showcase_pinch_to_zoom"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/primary_on_dark"
+        android:gravity="center_horizontal"
+        android:id="@+id/sc_subtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:text="@string/ep_showcase_got_it"
+        android:maxLines="3"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/sc_bottom_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="0x7f0808ec"/>
+    </FrameLayout>
+</LinearLayout>

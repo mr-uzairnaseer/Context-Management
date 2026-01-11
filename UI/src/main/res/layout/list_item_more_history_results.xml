@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mhrli_container_fl"
+    android:background="@drawable/bg_pressable_text_states"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center_vertical"
+        android:id="@+id/mhb_text_ttv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="72dp"
+        android:text="@string/sshv_more_from_search_history"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="72dp"/>
+</FrameLayout>

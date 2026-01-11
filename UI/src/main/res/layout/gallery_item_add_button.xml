@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.komoot.android.view.FixedAspectRatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="100dp"
+    android:minHeight="100dp"
+    app:aspectRatioHeight="1"
+    app:aspectRatioWidth="1">
+    <ImageView
+        android:background="@drawable/bg_white_shape_with_grey_effect_states"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/btn_photo_add"
+        android:scaleType="center"/>
+</de.komoot.android.view.FixedAspectRatioFrameLayout>

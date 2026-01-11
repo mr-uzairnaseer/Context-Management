@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/psfb_base_row_container_ll"
+        android:background="@drawable/bg_white_with_divider_effect_states"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+        <ImageView
+            android:id="@+id/psfb_selected_sport_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin_and_padding"/>
+        <TextView
+            android:textColor="@color/secondary"
+            android:ellipsize="end"
+            android:id="@+id/textview_sport_chooser_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:paddingStart="16dp"
+            android:layout_marginStart="@dimen/default_margin_and_padding"
+            android:layout_marginEnd="@dimen/default_margin_and_padding"
+            style="@style/TextAppearance.Komoot.Theme2.Label03Bold"/>
+    </LinearLayout>
+    <de.komoot.android.ui.planning.view.SportChooserView
+        android:id="@+id/psfb_expanend_row_container_fl"
+        android:background="@color/theme_control_normal"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:activeSportIconTint="@color/black"
+        app:activeSportItemBackground="@drawable/bg_circle_white"
+        app:disabledSportIconTint="#737373"
+        app:inactiveSportIconTint="@color/white"
+        app:inactiveSportItemBackground="@drawable/btn_theme_control_circle_states"/>
+</LinearLayout>

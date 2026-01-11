@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:background="0x7f081078"
+        android:layout_width="@dimen/avatar_36"
+        android:layout_height="@dimen/avatar_36"
+        android:layout_marginLeft="@dimen/default_margin_and_padding"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="@dimen/default_margin_and_padding"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@+id/npali_sport_badge_iv"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+    </FrameLayout>
+    <TextView
+        android:textSize="24sp"
+        android:textColor="@color/golden_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_and_padding"
+        android:layout_marginTop="@dimen/default_margin_and_padding"
+        android:layout_marginRight="@dimen/default_margin_and_padding"
+        android:text="@string/prrli_no_pioneer_in_region_title"
+        android:fontFamily="?attr/fontBold"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/npali_no_pioneer_region_in_text_ttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_and_padding"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="@dimen/default_margin_and_padding"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"/>
+</LinearLayout>

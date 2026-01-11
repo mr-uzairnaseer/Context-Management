@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="24dp"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+    <Button
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:id="@+id/fab_pick_a_package"
+        android:background="@drawable/btn_round_corners_36dp_hero_green_white_ripple_states"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="@string/myregions_buy_regions_pick_package_fab"
+        android:alpha="0"
+        android:fontFamily="?attr/fontBold"
+        android:layout_marginStart="@dimen/default_margin_and_padding"
+        android:layout_marginEnd="@dimen/default_margin_and_padding"
+        android:elevation="24dp"/>
+</FrameLayout>

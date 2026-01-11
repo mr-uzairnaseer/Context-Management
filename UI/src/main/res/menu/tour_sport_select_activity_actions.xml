@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_e_bike"
+        android:title="@string/sport_select_e_bike_filter"
+        app:actionLayout="@layout/layout_menu_action_e_bike"
+        app:showAsAction="always"/>
+</menu>

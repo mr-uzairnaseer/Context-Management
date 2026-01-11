@@ -1,0 +1,5 @@
+package com.google.zxing.common;
+
+/* loaded from: classes5.dex */
+public final class PerspectiveTransform {
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layout_list_item_user_recommendation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/urli_people_you_like_container_ll"
+        android:background="@color/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/user_info_feed_user_recommendation_title"
+            android:maxLines="2"
+            android:layout_weight="1"
+            android:fontFamily="?attr/fontRegular"
+            android:layout_marginStart="@dimen/default_margin_and_padding"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/secondary"
+            android:gravity="center_vertical"
+            android:id="@+id/textview_btn_show_all"
+            android:background="@drawable/bg_green_grey_light_states"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/user_info_feed_user_recommendation_all"
+            android:maxLines="1"
+            android:layout_weight="0"
+            android:textAllCaps="true"
+            android:fontFamily="?attr/fontBold"
+            android:paddingStart="@dimen/default_margin_and_padding"
+            android:paddingEnd="@dimen/default_margin_and_padding"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:background="@color/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"/>
+</LinearLayout>

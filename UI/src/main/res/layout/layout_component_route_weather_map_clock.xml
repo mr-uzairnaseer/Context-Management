@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineProvider="bounds">
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/wpmp_time_button"
+        android:background="@drawable/btn_round_corners_18dp_hero_green_white_ripple_states"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:minWidth="104dp"
+        android:text="@string/wpmp_time_not_set"
+        android:drawablePadding="6dp"
+        android:drawableStart="0x7f081030"
+        android:fontFamily="?attr/fontBold"
+        android:paddingStart="6dp"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:elevation="2dp"/>
+</FrameLayout>

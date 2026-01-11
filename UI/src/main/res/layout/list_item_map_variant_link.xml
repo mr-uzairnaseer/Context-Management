@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_ripple_on_light"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="26dp"
+    android:paddingEnd="@dimen/default_margin_and_padding"
+    android:outlineProvider="paddedBounds">
+    <ImageView
+        android:id="@+id/map_variant_link_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/main_grey"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/main_grey"
+        android:gravity="center_vertical"
+        android:id="@+id/map_variant_link_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="?attr/fontRegular"
+        android:layout_marginStart="24dp"/>
+</LinearLayout>

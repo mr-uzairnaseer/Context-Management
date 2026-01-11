@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_search_listitem"
+    android:background="@drawable/ic_search_cell_states"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="76dp">
+        <ImageView
+            android:id="@+id/imageview_icon"
+            android:visibility="visible"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="@dimen/default_margin_and_padding"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:textColor="@color/kmt_style_text_first_level_info"
+                android:id="@+id/textview_list_item_label"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="?attr/fontRegular"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

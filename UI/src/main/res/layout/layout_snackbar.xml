@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/mSnackBarLayoutContainerLL"
+    android:background="@color/dark_grey"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:minHeight="48dp"
+    android:alpha="0">
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <de.komoot.android.view.AutoFitTextView
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/mMessageTTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:fontFamily="?attr/fontRegular"
+            android:layout_marginHorizontal="@dimen/default_margin_and_padding"/>
+    </FrameLayout>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/primary_on_dark"
+        android:gravity="center_vertical"
+        android:id="@+id/mCTAButtonTTV"
+        android:background="@drawable/btn_borderless_on_dark"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:fontFamily="?attr/fontRegular"
+        android:paddingStart="@dimen/default_margin_and_padding"
+        android:paddingEnd="@dimen/default_margin_and_padding"/>
+</LinearLayout>

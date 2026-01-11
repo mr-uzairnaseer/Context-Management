@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_share_invite_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/activity_share_invite2_image"
+            android:layout_width="match_parent"
+            android:layout_height="416dp"/>
+        <include layout="@layout/divider_item"/>
+        <ViewStub
+            android:id="@+id/activity_share_invite2_stub_tour_visibility"
+            android:clickable="false"
+            android:inflatedId="@+id/activity_share_invite2_tour_visibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include layout="@layout/divider_item"/>
+        <LinearLayout
+            android:id="@+id/activity_share_invite2_share_image_container"
+            android:background="@drawable/bg_green_grey_light_states"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_embed_image"/>
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/tour_share2_post_media_section"
+                android:fontFamily="?attr/fontRegular"/>
+        </LinearLayout>
+        <include layout="@layout/divider_item"/>
+        <LinearLayout
+            android:id="@+id/activity_share_invite2_get_url_container"
+            android:background="@drawable/bg_green_grey_light_states"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_link"
+                app:tint="@color/black"/>
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/tour_share2_share_link_section"
+                android:fontFamily="?attr/fontRegular"/>
+        </LinearLayout>
+        <include layout="@layout/divider_item"/>
+        <LinearLayout
+            android:id="@+id/activity_share_invite2_tag_participants_container"
+            android:background="@drawable/bg_green_grey_light_states"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="16dp"
+                android:src="0x7f080b9d"/>
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/tour_information_tag_participants"
+                android:fontFamily="?attr/fontRegular"/>
+        </LinearLayout>
+        <include layout="@layout/divider_item"/>
+    </LinearLayout>
+</ScrollView>

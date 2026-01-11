@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/btn_share_circle_states"
+        android:id="@+id/action_share_user_highlight"
+        android:title="@string/tour_list_context_menu_share"
+        appcompat:showAsAction="always"/>
+    <item
+        android:icon="0x7f080b84"
+        android:id="@+id/action_report_user_highlight"
+        android:title="@string/highlight_report_hl_menu"
+        appcompat:showAsAction="always"/>
+</menu>

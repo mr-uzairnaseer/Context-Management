@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/section_like_info"
+    android:background="@drawable/bg_ripple_on_light"
+    android:paddingLeft="@dimen/list_item_side_padding"
+    android:paddingRight="@dimen/list_item_side_padding"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:paddingStart="@dimen/list_item_side_padding"
+    android:paddingEnd="@dimen/list_item_side_padding">
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/secondary"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/layout_user_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="0x7f08114b"
+            android:scaleType="center"
+            android:layout_marginEnd="6dp"/>
+    </LinearLayout>
+    <de.komoot.android.widget.UsernameTextView
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textview_like_someone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="?attr/fontRegular"/>
+</LinearLayout>

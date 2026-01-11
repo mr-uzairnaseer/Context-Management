@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_tour_video"
+        android:id="@+id/menu_action_render_tourvideo"
+        android:title="@string/tour_list_context_menu_videorender"
+        appcompat:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_share_android"
+        android:id="@+id/menu_action_share_icon_element"
+        android:title="@string/tour_list_context_menu_share"
+        appcompat:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_action_more_vertical"
+        android:id="@+id/menu_action_open_hidden_menu"
+        android:title="@string/highlight_more_menu"
+        appcompat:showAsAction="always">
+        <menu>
+            <group android:id="@+id/grp1">
+                <item
+                    android:icon="@drawable/ic_action_navigation"
+                    android:id="@+id/menu_action_route_navigation"
+                    android:title="@string/route_information_btn_start_navigation"
+                    android:iconTint="@color/grey_medium"/>
+                <item
+                    android:icon="@drawable/ic_edit_grey"
+                    android:id="@+id/menu_action_edit_tour"
+                    android:title="@string/route_information_menu_edit"/>
+            </group>
+            <group android:id="@+id/grp2">
+                <item
+                    android:icon="@drawable/ic_invite"
+                    android:id="@+id/menu_action_invite"
+                    android:title="@string/menu_item_invite"/>
+                <item
+                    android:icon="0x7f080dde"
+                    android:id="@+id/menu_action_share"
+                    android:title="@string/menu_item_share"/>
+            </group>
+            <group android:id="@+id/grp3">
+                <item
+                    android:icon="@drawable/ic_rename"
+                    android:id="@+id/action_route_rename"
+                    android:title="@string/route_info_action_rename"/>
+                <item
+                    android:icon="@drawable/ic_action_save"
+                    android:id="@+id/menu_action_save"
+                    android:title="@string/route_info_action_save"
+                    android:iconTint="@color/grey_medium"/>
+                <item
+                    android:icon="@drawable/ic_route"
+                    android:id="@+id/menu_action_plan_similar"
+                    android:title="@string/route_information_menu_plan_similar"
+                    android:iconTint="@color/grey_medium"/>
+                <item
+                    android:icon="@drawable/ic_add_circle_outline_transparent"
+                    android:id="@+id/menu_action_add_to_collection"
+                    android:title="@string/action_add_to_collection"/>
+                <item
+                    android:icon="@drawable/ic_download"
+                    android:id="@+id/menu_action_export"
+                    android:title="@string/route_info_action_export"/>
+            </group>
+            <group android:id="@+id/grp4">
+                <item
+                    android:id="@+id/menu_action_tour_delete"
+                    android:title="@string/route_info_action_delete"/>
+            </group>
+            <group android:id="@+id/grp5">
+                <item
+                    android:id="@+id/menu_action_tour_report"
+                    android:title="@string/content_reporting_report_tour"/>
+            </group>
+        </menu>
+    </item>
+</menu>
