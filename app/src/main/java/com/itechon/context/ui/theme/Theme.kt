@@ -15,7 +15,8 @@ private val DarkColorScheme = darkColorScheme(
     onPrimary = MdThemeDarkOnPrimary,
     background = MdThemeDarkBackground,
     surface = MdThemeDarkSurface,
-    onSurface = MdThemeDarkOnSurface
+    onSurface = MdThemeDarkOnSurface,
+    tertiary = MdThemeDarkTertiary
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -27,7 +28,8 @@ private val LightColorScheme = lightColorScheme(
     onSecondary = MdThemeLightOnSecondary,
     background = MdThemeLightBackground,
     surface = MdThemeLightSurface,
-    onSurface = MdThemeLightOnSurface
+    onSurface = MdThemeLightOnSurface,
+    tertiary = MdThemeLightTertiary
 )
 
 @Composable

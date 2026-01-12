@@ -3,45 +3,50 @@ package com.itechon.context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import androidx.compose.material3.ExperimentalMaterial3Api
+import com.itechon.context.ui.ContextViewModel
+import com.itechon.context.ui.screens.ContextDetailScreen
+import com.itechon.context.ui.screens.HomeScreen
+import com.itechon.context.ui.screens.LoginScreen
+import com.itechon.context.ui.screens.SearchScreen
 import com.itechon.context.ui.theme.ContextTheme
 
 class MainActivity : ComponentActivity() {
+    @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        
+        val app = application as ContextApp
+        val viewModelFactory = ContextViewModel.Factory(app.repository, app.itemRepository)
+
         setContent {
             ContextTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                val navController = rememberNavController()
+                val viewModel: ContextViewModel = viewModel(factory = viewModelFactory)
+
+                NavHost(navController = navController, startDestination = "login") {
+                    composable("login") {
+                        LoginScreen(navController)
+                    }
+                    composable("home") {
+                        HomeScreen(navController, viewModel)
+                    }
+                    composable("context_detail/{contextId}") { backStackEntry ->
+                        val contextId = backStackEntry.arguments?.getString("contextId")
+                        if (contextId != null) {
+                            ContextDetailScreen(contextId, viewModel, navController)
+                        }
+                    }
+                    composable("search") {
+                        SearchScreen(navController, viewModel)
+                    }
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ContextTheme {
-        Greeting("Android")
     }
 }

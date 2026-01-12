@@ -33,6 +33,28 @@ class ContextRepository(
         contextDao.insertContext(context)
     }
 
+    suspend fun getDirtyContexts(): List<ContextEntity> {
+        return contextDao.getDirtyContexts()
+    }
+
+    suspend fun getDirtyItems(): List<ItemEntity> {
+        return itemDao.getDirtyItems()
+    }
+
+    suspend fun markContextSynced(contextId: String) {
+        val context = contextDao.getContextById(contextId)
+        context?.let {
+            contextDao.insertContext(it.copy(syncStatus = "SYNCED"))
+        }
+    }
+
+    suspend fun markItemSynced(itemId: String) {
+        val item = itemDao.getItemById(itemId)
+        item?.let {
+            itemDao.insertItem(it.copy(syncStatus = "SYNCED"))
+        }
+    }
+
     suspend fun deleteContext(context: ContextEntity) {
         contextDao.deleteContext(context)
     }

@@ -7,6 +7,8 @@ import com.itechon.context.ContextApp
 import com.itechon.context.data.repository.ContextRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import io.github.jan.supabase.postgrest.postgrest
+import com.itechon.context.data.remote.SupabaseModule
 
 class SyncWorker(
     context: Context,
@@ -19,14 +21,18 @@ class SyncWorker(
         
         try {
             // 1. Sync Contexts
-            // val dirtyContexts = repository.getDirtyContexts()
-            // pushToSupabase(dirtyContexts)
-            // pullFromSupabase()
+            val dirtyContexts = repository.getDirtyContexts()
+            dirtyContexts.forEach { context ->
+                SupabaseModule.client.postgrest["contexts"].upsert(context)
+                repository.markContextSynced(context.id)
+            }
             
             // 2. Sync Items
-            // val dirtyItems = repository.getDirtyItems()
-            // pushToSupabase(dirtyItems)
-            // pullFromSupabase()
+            val dirtyItems = repository.getDirtyItems()
+            dirtyItems.forEach { item ->
+                SupabaseModule.client.postgrest["items"].upsert(item)
+                repository.markItemSynced(item.id)
+            }
             
             Result.success()
         } catch (e: Exception) {
