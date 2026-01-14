@@ -19,7 +19,11 @@ data class ContextEntity(
     val primaryLocationLng: Double? = null,
     val isUserCreated: Boolean = true,
     val embedding: FloatArray? = null,
-    val syncStatus: String = "SYNCED" // SYNCED, DIRTY, DELETED
+    val syncStatus: String = "DIRTY", // DIRTY, SYNCED, DELETED
+    val color: Int? = null, // ARGB Int
+    val isPinned: Boolean = false,
+    val reminderTimestamp: Long? = null,
+    val linkedCalendarId: Long? = null
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

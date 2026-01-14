@@ -11,7 +11,20 @@ class ItemRepository(
         return itemDao.getItemsForContext(contextId)
     }
 
+    fun getAllItems(): Flow<List<ItemEntity>> {
+        return itemDao.getAllItems()
+    }
+
+    fun searchItems(query: String): Flow<List<ItemEntity>> {
+        val ftsQuery = "*$query*"
+        return itemDao.searchItems(ftsQuery)
+    }
+
     suspend fun insertItem(item: ItemEntity) {
+        itemDao.insertItem(item)
+    }
+
+    suspend fun updateItem(item: ItemEntity) {
         itemDao.insertItem(item)
     }
 

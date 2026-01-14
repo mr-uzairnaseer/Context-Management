@@ -56,6 +56,13 @@ class ContextRepository(
     }
 
     suspend fun deleteContext(context: ContextEntity) {
-        contextDao.deleteContext(context)
+        // Soft delete: Mark as DELETED and DIRTY so SyncWorker can propagate it
+        val deletedContext = context.copy(syncStatus = "DELETED")
+        contextDao.insertContext(deletedContext)
+    }
+
+    suspend fun clearAllData() {
+        contextDao.deleteAllContexts()
+        itemDao.deleteAllItems()
     }
 }

@@ -11,6 +11,8 @@ import androidx.compose.material.icons.filled.CameraAlt
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Mic
+import androidx.compose.material.icons.filled.Place
+import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LargeFloatingActionButton
 import androidx.compose.material3.MaterialTheme
@@ -24,6 +26,8 @@ import androidx.compose.ui.unit.dp
 fun SmartCaptureFab(
     onCaptureNote: () -> Unit,
     onCapturePhoto: () -> Unit,
+    onCaptureTask: () -> Unit,
+    onCaptureLocation: () -> Unit = {},
     onCaptureAudio: () -> Unit = {}
 ) {
     var expanded by remember { mutableStateOf(false) }
@@ -41,6 +45,15 @@ fun SmartCaptureFab(
                 horizontalAlignment = Alignment.End,
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
+                SmallFloatingActionButton(
+                    onClick = {
+                        onCaptureLocation()
+                        expanded = false
+                    },
+                    containerColor = MaterialTheme.colorScheme.secondaryContainer
+                ) {
+                    Icon(Icons.Default.Place, contentDescription = "Pin Location")
+                }
                 SmallFloatingActionButton(
                     onClick = {
                         onCaptureAudio()
@@ -68,12 +81,22 @@ fun SmartCaptureFab(
                 ) {
                     Icon(Icons.Default.Edit, contentDescription = "Write Note")
                 }
+                SmallFloatingActionButton(
+                    onClick = {
+                        onCaptureTask()
+                        expanded = false
+                    },
+                    containerColor = MaterialTheme.colorScheme.tertiaryContainer
+                ) {
+                    Icon(Icons.Default.CheckCircle, contentDescription = "Add Task")
+                }
             }
         }
 
         LargeFloatingActionButton(
             onClick = { expanded = !expanded },
-            containerColor = MaterialTheme.colorScheme.primaryContainer
+            containerColor = MaterialTheme.colorScheme.tertiary,
+            contentColor = MaterialTheme.colorScheme.onTertiary
         ) {
             Icon(
                 if (expanded) Icons.Default.Close else Icons.Default.Add,

@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ContextDao {
-    @Query("SELECT * FROM contexts ORDER BY updatedAt DESC")
+    @Query("SELECT * FROM contexts WHERE syncStatus != 'DELETED' ORDER BY updatedAt DESC")
     fun getAllContexts(): Flow<List<ContextEntity>>
 
     @Query("SELECT * FROM contexts WHERE id = :id")
@@ -23,4 +23,7 @@ interface ContextDao {
     
     @Query("DELETE FROM contexts WHERE id = :id")
     suspend fun deleteContextById(id: String)
+
+    @Query("DELETE FROM contexts")
+    suspend fun deleteAllContexts()
 }

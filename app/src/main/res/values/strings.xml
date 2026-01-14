@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Context</string>
+    <string name="shortcut_new_context_short">New Context</string>
+    <string name="shortcut_new_context_long">Create New Context</string>
+    <string name="shortcut_search_short">Search</string>
+    <string name="shortcut_search_long">Search Contexts</string>
 </resources>

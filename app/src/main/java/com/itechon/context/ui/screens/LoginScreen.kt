@@ -1,6 +1,7 @@
 package com.itechon.context.ui.screens
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.background
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -23,10 +24,17 @@ fun LoginScreen(navController: NavController) {
     var errorMessage by remember { mutableStateOf<String?>(null) }
     val scope = rememberCoroutineScope()
 
-    Column(
+    Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(24.dp),
+            .background(
+                MaterialTheme.colorScheme.background
+            )
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
@@ -34,7 +42,8 @@ fun LoginScreen(navController: NavController) {
         AsyncImage(
             model = "file:///android_asset/logo.svg",
             contentDescription = "Logo",
-            modifier = Modifier.size(120.dp)
+            modifier = Modifier.size(120.dp),
+            // colorFilter = androidx.compose.ui.graphics.ColorFilter.tint(MaterialTheme.colorScheme.primary) // Optional: Tint logo if it's a monochrome vector
         )
         // Reduced spacing/negative padding to shift text up relative to logo
         Spacer(modifier = Modifier.height(8.dp)) 
@@ -51,7 +60,12 @@ fun LoginScreen(navController: NavController) {
             value = email,
             onValueChange = { email = it },
             label = { Text("Email") },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedBorderColor = MaterialTheme.colorScheme.primary,
+                focusedLabelColor = MaterialTheme.colorScheme.primary,
+                cursorColor = MaterialTheme.colorScheme.primary
+            )
         )
         Spacer(modifier = Modifier.height(16.dp))
         
@@ -60,7 +74,12 @@ fun LoginScreen(navController: NavController) {
             onValueChange = { password = it },
             label = { Text("Password") },
             modifier = Modifier.fillMaxWidth(),
-            visualTransformation = PasswordVisualTransformation()
+            visualTransformation = PasswordVisualTransformation(),
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedBorderColor = MaterialTheme.colorScheme.primary,
+                focusedLabelColor = MaterialTheme.colorScheme.primary,
+                cursorColor = MaterialTheme.colorScheme.primary
+            )
         )
         
         errorMessage?.let {
@@ -68,7 +87,15 @@ fun LoginScreen(navController: NavController) {
             Text(it, color = MaterialTheme.colorScheme.error)
         }
         
-        Spacer(modifier = Modifier.height(32.dp))
+        
+        TextButton(
+            onClick = { navController.navigate("forgot_password") },
+            modifier = Modifier.align(Alignment.End)
+        ) {
+            Text("Forgot Password?", color = MaterialTheme.colorScheme.primary)
+        }
+
+        Spacer(modifier = Modifier.height(24.dp))
         
         Button(
             onClick = {
@@ -90,14 +117,19 @@ fun LoginScreen(navController: NavController) {
                 }
             },
             modifier = Modifier.fillMaxWidth(),
-            enabled = !isLoading
+            enabled = !isLoading,
+            colors = ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.primary,
+                contentColor = MaterialTheme.colorScheme.onPrimary
+            )
         ) {
-            if (isLoading) CircularProgressIndicator(modifier = Modifier.size(24.dp))
+            if (isLoading) CircularProgressIndicator(modifier = Modifier.size(24.dp), color = MaterialTheme.colorScheme.onPrimary)
             else Text("Login")
         }
         
-        TextButton(onClick = { /* Implement Sign Up */ }) {
-            Text("Don't have an account? Sign Up")
+        TextButton(onClick = { navController.navigate("signup") }) {
+            Text("Don't have an account? Sign Up", color = MaterialTheme.colorScheme.secondary)
+        }
         }
     }
 }

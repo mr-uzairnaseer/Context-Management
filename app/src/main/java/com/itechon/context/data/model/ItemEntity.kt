@@ -6,7 +6,7 @@ import kotlinx.datetime.Instant
 import kotlinx.serialization.Serializable
 
 enum class ItemType {
-    NOTE, PHOTO, AUDIO, LOCATION
+    NOTE, PHOTO, AUDIO, LOCATION, TASK
 }
 
 @Entity(tableName = "items")
@@ -21,7 +21,8 @@ data class ItemEntity(
     val locationLng: Double? = null,
     val contextId: String? = null, // Foreign Key to Context
     val embedding: FloatArray? = null,
-    val syncStatus: String = "SYNCED" // SYNCED, DIRTY, DELETED
+    val syncStatus: String = "SYNCED", // SYNCED, DIRTY, DELETED
+    val isCompleted: Boolean = false
 ) {
      override fun equals(other: Any?): Boolean {
         if (this === other) return true

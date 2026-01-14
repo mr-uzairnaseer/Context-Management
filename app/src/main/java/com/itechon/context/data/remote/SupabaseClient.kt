@@ -10,14 +10,17 @@ import io.github.jan.supabase.serializer.KotlinXSerializer
 import kotlinx.serialization.json.Json
 
 object SupabaseModule {
-    private const val SUPABASE_URL = "https://your-project-ref.supabase.co"
-    private const val SUPABASE_KEY = "your-anon-key"
+    private const val SUPABASE_URL = com.itechon.context.BuildConfig.SUPABASE_URL
+    private const val SUPABASE_KEY = com.itechon.context.BuildConfig.SUPABASE_KEY
 
     val client = createSupabaseClient(
         supabaseUrl = SUPABASE_URL,
         supabaseKey = SUPABASE_KEY
     ) {
-        install(Auth)
+        install(Auth) {
+            scheme = "context"
+            host = "reset-callback"
+        }
         install(Postgrest)
         install(Storage)
         install(Functions)

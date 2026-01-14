@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="new_context"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_new_context_short"
+        android:shortcutLongLabel="@string/shortcut_new_context_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.itechon.context"
+            android:targetClass="com.itechon.context.MainActivity"
+            android:data="context://new" />
+    </shortcut>
+    
+    <shortcut
+        android:shortcutId="global_search"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_search_short"
+        android:shortcutLongLabel="@string/shortcut_search_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.itechon.context"
+            android:targetClass="com.itechon.context.MainActivity"
+            android:data="context://search" />
+    </shortcut>
+</shortcuts>
